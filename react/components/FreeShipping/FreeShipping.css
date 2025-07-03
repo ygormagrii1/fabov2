@@ -1,0 +1,67 @@
+.freeShippingBar {
+    border: 1px solid #9a9a9a;
+    background: #fff;
+    height: 10px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.freeShippingItem p {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: 'Raleway';
+    line-height: 20px;
+}
+
+.freeShippingRangeBefore{
+    content: "";
+    height: 12px;
+    width: 12px;
+    background: #fff;
+    position: absolute;
+    border: 3px solid #003a7f;
+    border-radius: 25px;
+    margin-top: -1px;
+    margin-left: -10px;
+    transition:1s;
+}
+
+.freeShippingRange {
+    background-color: #003a7f;
+    max-width: calc(100% + 1px);
+    height: 10px;
+    margin-top: -1px;
+    margin-left: -1px;
+    transition: width 1s;
+    border-radius: 25px;
+}
+
+.freeShippingItem .title {
+    font: 800 0.75em "Overpass", sans-serif;
+    text-transform: uppercase;
+    margin-top: 1em;
+    display: block;
+}
+
+.freeShippingItem {
+    background: #ff6344;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5px;
+    display: none;
+}
+
+
+.fretetexto {
+    display: flex;
+    align-items: center;
+}
+
+.fretetexto::before {
+    content: "";
+    background-image: url(./frete.png);
+    height: 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+}

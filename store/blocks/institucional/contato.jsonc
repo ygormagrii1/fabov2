@@ -1,0 +1,117 @@
+{
+    "store.custom#contato": {
+      "blocks": [
+        "responsive-layout.desktop#con-desk", 
+        "responsive-layout.phone#con-mob"
+      ]  
+    },   
+    "responsive-layout.desktop#con-desk": {
+      "children": ["flex-layout.row#con-content-desktop"]
+    },
+    "responsive-layout.phone#con-mob": {
+      "children": ["flex-layout.row#con-content-mobile"]
+    },
+    
+  
+    "flex-layout.row#con-content-desktop":{
+      "children": [
+        "flex-layout.col#con-menu-lateral",
+        "flex-layout.col#con-text-page" 
+      ],
+      "props": {
+        "paddingTop": "8",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+    "flex-layout.row#con-content-mobile":{
+      "children": [
+        "flex-layout.col#con-text-page",
+        "flex-layout.row#con-lateral-menu-mobile"
+      ]
+    }, 
+    "flex-layout.row#con-lateral-menu-mobile":{
+      "children": [
+        "flex-layout.col#con-menu1-mobile",
+        "flex-layout.col#con-menu2-mobile"
+      ],
+      "props": { 
+        "preserveLayoutOnMobile": true, 
+        "paddingTop": "5",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+  
+  
+    "flex-layout.col#con-menu-lateral": {
+      "title": "Menu Lateral Desktop",
+      "children": [
+        "rich-text#con-items-menu1-lateral",
+        "rich-text#con-items-menu2-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "18%"
+      }
+    },
+    "flex-layout.col#con-menu1-mobile": {
+      "title": "Menu Lateral Mobile",
+      "children": [
+        "rich-text#con-items-menu1-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#con-menu2-mobile": { 
+      "children": [
+        "rich-text#con-items-menu2-lateral" 
+      ],
+      "props": { 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#con-text-page": {
+      "title": "Conteúdo Principal",
+      "children": [ 
+        "rich-text#con-txt-page-title",
+        "rich-text#con-txt-page",
+        "formulario-contato"
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "78%"
+      }
+    },  
+    "rich-text#con-items-menu1-lateral": {
+      "title": "Coluna 1",
+      "props": { 
+        "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#con-items-menu2-lateral": {
+      "title": "Coluna 2",
+      "props": { 
+        "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#con-txt-page-title": {
+      "title": "Conteúdo Principal - Título",
+      "props": { 
+        "text": "# **ATENDIMENTO** #" ,
+        "blockClass": "mainTitle" 
+      } 
+    },
+    "rich-text#con-txt-page": {
+      "title": "Conteúdo Principal - Texto",
+      "props": { 
+          "text": "Para agilizarmos o retorno, insira os detalhes de sua solicitação. Responderemos assim que possível.",
+          "blockClass": "mainContent"
+      }
+    } 
+  }
+  

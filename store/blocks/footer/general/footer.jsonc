@@ -1,0 +1,367 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+
+  //MENU LINKS
+  "flex-layout.row#menu-footer": {
+    "children": [
+      "flex-layout.col#menu-footer-01",
+      "flex-layout.col#menu-footer-02",
+      "flex-layout.col#menu-footer-03",
+      "flex-layout.col#menu-footer-04"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colJustify": "between",
+      "blockClass": "menu-footer"
+    }
+  },
+
+  "flex-layout.col#menu-footer-01": {
+    "children": [
+      "vtex.menu@2.x:menu#contato",
+      "vtex.menu@2.x:menu#atendimento"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#menu-footer-02": {
+    "children": [
+      "vtex.menu@2.x:menu#institucional",
+      "social-networks"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#menu-footer-03": {
+    "children": [
+      "vtex.menu@2.x:menu#ajuda"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#menu-footer-04": {
+    "children": [
+      "flex-layout.row#pagamentos-footer",
+      "flex-layout.row#certificador-footer"
+
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#pagamentos-footer": {
+    "children": [
+      "image#pagamento-01",
+      "image#pagamento-02",
+      "image#pagamento-03",
+      "image#pagamento-04",
+      "image#pagamento-05",
+      "image#pagamento-07",
+      "image#pagamento-08",
+      "image#pagamento-09",
+      "image#pagamento-10",
+      "image#pagamento-11"
+    ],
+    "props":{
+      "blockClass": "grid-pagamentos-footer"
+    }
+  },
+
+  "image#pagamento-01": {
+    "props": {
+      "src": "assets/svg/pagamento-01.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-02": {
+    "props": {
+      "src": "assets/svg/pagamento-02.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-03": {
+    "props": {
+      "src": "assets/svg/pagamento-03.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-04": {
+    "props": {
+      "src": "assets/svg/pagamento-04.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-05": {
+    "props": {
+      "src": "assets/svg/pagamento-05.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-07": {
+    "props": {
+      "src": "assets/svg/pagamento-07.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-08": {
+    "props": {
+      "src": "assets/svg/pagamento-08.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-09": {
+    "props": {
+      "src": "assets/svg/pagamento-09.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-10": {
+    "props": {
+      "src": "assets/svg/pagamento-10.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "image#pagamento-11": {
+    "props": {
+      "src": "assets/svg/pagamento-11.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de pagamento"
+  },
+
+  "flex-layout.row#certificador-footer": {
+    "children": [
+      "image#lets-encrypt",
+      "image#sage-google"
+    ],
+    "props":{
+      "blockClass": "selo-seguranca-footer",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "image#lets-encrypt": {
+    "props": {
+      "src": "assets/svg/lets-encrypt.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Selo de segurança"
+  },
+
+  "image#sage-google": {
+    "props": {
+      "src": "assets/svg/save-google.svg",
+      "link": {
+        "url": "#",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    },
+    "title": "Google segurança"
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#marcas",
+      "vtex.menu@2.x:menu#termos"
+    ],
+    "props": {
+      "blockClass": ["menu-row", "footer"],
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "preventHorizontalStretch": true,
+      "colJustify": "between"
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/fastobra"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/fastobra/"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "flex-layout.col#copyrigth",
+      "flex-layout.col#plataformas"
+    ],
+    "props": {
+      "blockClass": "copyrigth",
+      "preventHorizontalStretch": false,
+      "colJustify": "between"
+    }
+  },
+
+  "flex-layout.col#plataformas": {
+    "children": [
+      "image#vtex",
+      "image#linx"
+    ],
+    "props": {
+      "blockClass": "plataformas-footer"
+    }
+  },
+
+  "flex-layout.col#copyrigth": {
+    "children": [
+      "rich-text#copyrigth"
+    ]
+  },
+
+  "rich-text#copyrigth": {
+    "props": {
+      "text": "Copyright © 2023 - FastObra. Todos os direitos reservados. \n CNPJ: 02.559.428/0001-02",
+      "blockClass": "copyrigth"
+    },
+    "title": "Texto copyrigth footer"
+  },
+
+  "image#vtex": {
+    "props": {
+      "src": "assets/imgs/rodape.png",
+      "link": {
+        "url": "https://agenciaraised.com.br",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "maxHeight": 100
+    },
+    "title": "Imagem - Vtex"
+  },
+
+  "image#linx": {
+    "props": {
+      "src": " ",
+      "link": {
+        "url": "https://agenciaraised.com.br",
+        "attributeTitle": "",
+        "newTab": true
+      },
+      "maxHeight": 28
+    },
+    "title": "Imagem - Linx"
+  },
+
+  // NEWSLETTER
+
+  "flex-layout.row#newsletter-footer": {
+    "title": "Bloco newsletrer home",
+    "props": {
+      "blockClass": "newsletter-footer",
+      "fullWidth": false,
+      "marginBottom": 9,
+      "marginTop": 8
+    },
+    "children": [
+      "flex-layout.col#newsletter-footer-left",
+      "flex-layout.col#newsletter-footer-rigth"
+    ]
+  },
+
+  "flex-layout.col#newsletter-footer-left":{
+    "children": [ "rich-text#newsletter-footer-title"],
+    "props": {
+      "width": "40%"
+    }
+  },
+
+  "rich-text#newsletter-footer-title": {
+    "props": {
+      "text": "Cadastre-se em nossa \n ### NEWSLETTER \n e fique por dentro de ofertas e novidades",
+      "blockClass": "newsletter-footer",
+      "verticalAlign": "middle"
+    }
+  },
+
+  "flex-layout.col#newsletter-footer-rigth":{
+    "children": ["newsletter-footer"],
+    "props": {
+      "width": "60%",
+      "verticalAlign": "middle"
+    }
+  }
+
+}

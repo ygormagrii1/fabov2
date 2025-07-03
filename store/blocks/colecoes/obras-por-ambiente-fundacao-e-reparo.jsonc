@@ -1,0 +1,31 @@
+{
+    "store.custom#obras-por-ambiente-fundacao-e-reparo": {
+        "blocks": [
+            "search-result-layout.customQuery#obrasporambientefundacaoereparo"
+        ]
+    },
+
+    "search-result-layout.customQuery#obrasporambientefundacaoereparo": {
+        "title": "OBRAS POR AMBIENTE - FUNDAÇÃO E REPARO",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "171",
+                "blockClass": [
+                    "colecao-lp"
+                ]
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+
+}

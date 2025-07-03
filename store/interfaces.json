@@ -1,0 +1,51 @@
+{
+    "custom-category-menu": {
+        "component": "HeaderCategoryMenu"
+    },
+
+    "custom-styles": {
+        "component": "CustomStyles"
+    },
+
+    "newsletter-home": {
+        "component": "NewsletterHome"
+    },
+
+    "newsletter-footer": {
+        "component": "NewsletterFooter"
+    },
+
+    "formulario-contato": {
+        "component": "FormularioContato"
+    },
+
+    "cookie": {
+        "component": "Cookie"
+    },
+
+    "texto-seo-colecao": {
+        "component": "TextoSeoColecao"
+    },
+
+    "custom-shipping-simulator" : {
+        "component" : "CustomShippingSimulator"
+    },
+
+    "whosale-price-custom": {
+        "component": "WholesalePrice"
+    } ,
+
+    "bar-free-shipping": {
+        "component": "FreeShipping"
+    },
+    "overlay-order-placed":{
+        "component":"OverlayOrderPlaced"
+    },
+    "pix-flag":{
+        "component":"PixFlag"
+    },
+    "pix-price":{
+        "component":"PixPrice"
+    }
+    
+}

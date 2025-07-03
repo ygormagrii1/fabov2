@@ -1,0 +1,33 @@
+.section--confirmation .confirmationTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0;
+  font-weight: 900;
+  color: #023878;
+  margin: 0;
+}
+
+.section--confirmation .confirmationMessage {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: #454545;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.section--confirmation :global(.vtex-store-components-3-x-imageElement) {
+  display: flex;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .section--confirmation .confirmationTitle {
+    font-size: 47px;
+  }
+
+  .section--confirmation .confirmationMessage {
+    font-size: 20px;
+  }
+}

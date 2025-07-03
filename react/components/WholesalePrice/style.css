@@ -1,0 +1,139 @@
+.line {
+    width: 90vw;
+    max-width: 80%;
+    background: #D7D7D7;
+    height: 1px;
+    display: block;
+
+}
+
+@media screen and (min-width: 490px) {
+    .line {
+        display: none;
+    }   
+}
+
+.wrapperPrice {
+    background: #EDEDED;
+    border: #E3E3E3;
+    border-radius: 4px;
+    height: 139px;
+    width: 230px;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* .wrapperPrice span, .wrapperPrice p {
+    padding: 1px;
+} */
+
+
+@media screen and (max-width: 920px) and (min-width: 620px) {
+    .wrapperPrice {
+        width: 140px;
+        padding: 13px;
+    }
+
+    .wrapperPrice span {
+        font-size: 10px;
+    }
+
+    .wrapperPrice p {
+        font-size: 11px;
+    }
+
+    .wrapperPrice .bestPrice {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .wrapperPrice {
+        width: 90vw;
+        max-width: 100%;
+        padding: 10px 12px;
+    }
+}
+
+.spotPricePixContainer {
+    font-size: 12px;
+}
+
+.priceHead {
+    margin: 0;
+}
+
+.priceTitleBlue {
+    color: #6A6F81;
+    margin: 0;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.priceTitleOrange {
+    color: #FF6344;
+    margin: 0;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: nowrap;
+
+}
+
+.wrapp_price__middle {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+}
+
+.listPrice {
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: line-through;
+    white-space: nowrap;
+
+}
+
+.bestPrice {
+    color: #003A7F;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    white-space: nowrap;
+
+}
+
+.unityIndicator {
+    font-family: Raleway;
+font-size: 14px;
+font-weight: 900;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+color: #003A7F;
+position: relative;
+top: -4px;
+}
+
+/* .wrapperPrice::after {
+    content: "Os descontos serão aplicados no checkout";
+} */

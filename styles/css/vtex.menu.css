@@ -1,0 +1,58 @@
+.menuContainer--contato.menuContainer--footer-menu::before{
+    content: 'CONTATO';
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.menuContainer--institucional.menuContainer--footer-menu::before{
+    content: 'INSTITUCIONAL';
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.menuContainer--atendimento.menuContainer--footer-menu::before{
+    content: 'ATENDIMENTO';
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.menuContainer--ajuda.menuContainer--footer-menu::before{
+    content: 'AJUDA E SUPORTE'; 
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.menuContainerNav--footer-menu .styledLinkContainer {
+    margin: 0;
+}
+ 
+.menuContainerNav--footer-menu{
+    margin-bottom: 25px;
+}
+
+
+@media(max-width: 768px){
+    .menuContainerNav{
+        width: 100%; 
+    }
+}

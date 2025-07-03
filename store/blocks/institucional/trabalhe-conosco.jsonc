@@ -1,0 +1,116 @@
+{
+    "store.custom#trabalhe-conosco": {
+      "blocks": [
+        "responsive-layout.desktop#trc-desk", 
+        "responsive-layout.phone#trc-mob"
+      ]  
+    },   
+    "responsive-layout.desktop#trc-desk": {
+      "children": ["flex-layout.row#trc-content-desktop"]
+    },
+    "responsive-layout.phone#trc-mob": {
+      "children": ["flex-layout.row#trc-content-mobile"]
+    },
+    
+  
+    "flex-layout.row#trc-content-desktop":{
+      "children": [
+        "flex-layout.col#trc-menu-lateral",
+        "flex-layout.col#trc-text-page" 
+      ],
+      "props": {
+        "paddingTop": "8",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+    "flex-layout.row#trc-content-mobile":{
+      "children": [
+        "flex-layout.col#trc-text-page",
+        "flex-layout.row#trc-lateral-menu-mobile"
+      ]
+    }, 
+    "flex-layout.row#trc-lateral-menu-mobile":{
+      "children": [
+        "flex-layout.col#trc-menu1-mobile",
+        "flex-layout.col#trc-menu2-mobile"
+      ],
+      "props": { 
+        "preserveLayoutOnMobile": true, 
+        "paddingTop": "5",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+  
+  
+    "flex-layout.col#trc-menu-lateral": {
+      "title": "Menu Lateral Desktop",
+      "children": [
+        "rich-text#trc-items-menu1-lateral",
+        "rich-text#trc-items-menu2-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "18%"
+      }
+    },
+    "flex-layout.col#trc-menu1-mobile": {
+      "title": "Menu Lateral Mobile",
+      "children": [
+        "rich-text#trc-items-menu1-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#trc-menu2-mobile": { 
+      "children": [
+        "rich-text#trc-items-menu2-lateral" 
+      ],
+      "props": { 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#trc-text-page": {
+      "title": "Conteúdo Principal",
+      "children": [ 
+        "rich-text#trc-txt-page-title",
+        "rich-text#trc-txt-page"
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "78%"
+      }
+    },  
+    "rich-text#trc-items-menu1-lateral": {
+      "title": "Coluna 1",
+      "props": { 
+        "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#trc-items-menu2-lateral": {
+      "title": "Coluna 2",
+      "props": { 
+        "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+        "blockClass": "menuinstitucionais"
+      } 
+    },
+    "rich-text#trc-txt-page-title": {
+      "title": "Conteúdo Principal - Título",
+      "props": { 
+        "text": "# **Trabalhe Conosco** #" ,
+        "blockClass": "mainTitle" 
+      }  
+    },
+    "rich-text#trc-txt-page": {
+      "title": "Conteúdo Principal - Texto",
+      "props": { 
+          "text": "Faça parte do time FastObra, venha trabalhar conosco, envie seu curriculo para falecom@fastobra.com.br.",
+          "blockClass": "mainContent"
+      }
+    } 
+  }
+  

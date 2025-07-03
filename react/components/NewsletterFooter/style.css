@@ -1,0 +1,91 @@
+.footernewsletter{
+    display: grid;
+    grid-template-columns: 1fr 184px;
+    align-items: end;
+    gap: 10px;
+}
+  
+.footernewsletter button{
+    width: 100%; 
+    background: #003a7f;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px; 
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .6px;
+    border-radius: 3px;
+    border: none;
+    display: block;
+    text-align: center;
+    transition: all 0.4s;
+    padding: 12px 0;
+    text-transform: uppercase; 
+    cursor: pointer;
+}
+
+
+.footernewsletter input{
+    border: none;
+    padding: 12px 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    border-radius: 3px;
+    color: #363631;
+    margin-right: 25px;
+    display: block;
+    width: 100%;
+    outline: none; 
+} 
+
+.footernewsletter .sucessomensagem{
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 15px;
+    width: 585px;
+    background: #ff6344ba;
+    color: #fff;
+    padding: 16px;
+    left: 0px;
+    right: 0px; 
+    margin: 15px auto;
+}  
+ 
+.footernewsletter .sucessomensagem p{
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .64px;
+    color: #fff;
+}  
+
+.footernewsletter .sucessomensagem span{
+    line-height: 14px;
+    font-size: 16px;
+    font-weight: 900; 
+    letter-spacing: .9px;
+    color: #005a9c;
+    display: block;
+    margin: 0;
+}  
+
+@media(max-width: 768px){
+    .footernewsletter{
+        grid-template-columns: 1fr;
+        margin-top: 15px; 
+    }
+    .footernewsletter input{
+        font-size: 16px;  
+    } 
+    .footernewsletter input::placeholder{
+        font-size: 14px; 
+    }  
+    .footernewsletter .sucessomensagem{
+        width: 90%; 
+    }
+}
+

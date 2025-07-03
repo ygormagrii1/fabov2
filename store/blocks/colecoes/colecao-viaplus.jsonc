@@ -1,0 +1,31 @@
+{
+    "store.custom#colecao-viaplus": {
+        "blocks": [
+            "search-result-layout.customQuery#viaplus"
+        ]
+    },
+
+    "search-result-layout.customQuery#viaplus": {
+        "title": "Viaplus",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "302",
+                "blockClass": [
+                    "colecao-lp"
+                ]
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+
+}

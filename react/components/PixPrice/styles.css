@@ -1,0 +1,10 @@
+.containerPixPrice {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -6px;
+    font-size: 25px;
+    color: #003a7f;
+    justify-content: center;
+    text-align: center;
+  }

@@ -1,0 +1,116 @@
+{
+    "store.custom#politicas": {
+      "blocks": [
+        "responsive-layout.desktop#pl-desk", 
+        "responsive-layout.phone#pl-mob"
+      ]  
+    },   
+    "responsive-layout.desktop#pl-desk": {
+      "children": ["flex-layout.row#pl-content-desktop"]
+    },
+    "responsive-layout.phone#pl-mob": {
+      "children": ["flex-layout.row#pl-content-mobile"]
+    },
+    
+  
+    "flex-layout.row#pl-content-desktop":{
+      "children": [
+        "flex-layout.col#pl-menu-lateral",
+        "flex-layout.col#pl-text-page" 
+      ],
+      "props": {
+        "paddingTop": "8",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+    "flex-layout.row#pl-content-mobile":{
+      "children": [
+        "flex-layout.col#pl-text-page",
+        "flex-layout.row#pl-lateral-menu-mobile"
+      ]
+    }, 
+    "flex-layout.row#pl-lateral-menu-mobile":{
+      "children": [
+        "flex-layout.col#pl-menu1-mobile",
+        "flex-layout.col#pl-menu2-mobile"
+      ],
+      "props": { 
+        "preserveLayoutOnMobile": true, 
+        "paddingTop": "5",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+  
+  
+    "flex-layout.col#pl-menu-lateral": {
+      "title": "Menu Lateral Desktop",
+      "children": [
+        "rich-text#pl-items-menu1-lateral",
+        "rich-text#pl-items-menu2-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "18%"
+      }
+    },
+    "flex-layout.col#pl-menu1-mobile": {
+      "title": "Menu Lateral Mobile",
+      "children": [
+        "rich-text#pl-items-menu1-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#pl-menu2-mobile": { 
+      "children": [
+        "rich-text#pl-items-menu2-lateral" 
+      ],
+      "props": { 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#pl-text-page": {
+      "title": "Conteúdo Principal",
+      "children": [ 
+        "rich-text#pl-txt-page-title",
+        "rich-text#pl-txt-page"
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "78%"
+      }
+    },  
+    "rich-text#pl-items-menu1-lateral": {
+      "title": "Coluna 1",
+      "props": { 
+        "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#pl-items-menu2-lateral": {
+      "title": "Coluna 2",
+      "props": { 
+        "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#pl-txt-page-title": {
+      "title": "Conteúdo Principal - Título",
+      "props": { 
+        "text": "# **Política de privacidade** #" ,
+        "blockClass": "mainTitle" 
+      } 
+    },
+    "rich-text#pl-txt-page": {
+      "title": "Conteúdo Principal - Texto",
+      "props": { 
+          "text": "A FastObra se preocupa com você, por isso tomamos muito cuidado com seus dados. Aqui vamos explicar como coletamos, usamos e protegemos suas informações. **Obrigado por confiar em nós!** \n \n Todos os dados são utilizados para melhorar ainda mais os serviços que prestamos a você, nosso Cliente. \n \n Essa política se aplica ao Site, e-commerce, aplicativos, páginas da internet, todos os dados que possuímos sobre você e sua conta de usuário, inclusive os dados coletados offline nas nossas unidades da FastObra. **Ao acessar e usar o Site, você concorda com essa política e autoriza expressamente a FastObra a coletar, processar e armazenar seus dados para os fins descritos aqui.** Caso você não concorde com qualquer item dessa política, por favor, não acesse o Site nem utilize os nossos serviços. \n \n ## Quais dados a FastObra coleta? ## \n \n **Dados que você fornece:** Ao criar uma conta de usuário, você nos fornece informações como nome completo, e- mail, endereço, entre outros dados. Além disso, também recebemos os dados que você preenche ao responder nossas pesquisas, avaliar nossos produtos e serviços ou qualquer outro meio. \n \n **Informações automáticas:** Nosso Site possui ferramentas específicas que nos enviam informações sempre que você interage com a FastObra, mesmo se você não possuir ou não acessar uma conta de usuário. Esses dados incluem informações sobre os produtos e anúncios com os quais você interage, sua localização geográfica, seu navegador, o seu dispositivo e caso você esteja acessando o Site de um dispositivo móvel, coletaremos também o identificador único do seu dispositivo. A maioria dos dispositivos permite que você navegue de forma anônima e desligue a opção de geolocalização, recomendamos que você visite a seção de configurações dos seus navegadores e dispositivos para escolher a opção que melhor te atenda. \n \n Dados de Pagamento: Ao realizar uma compra no Site, lojas físicas ou televendas, você nos fornece dados bancários e financeiros, como número do cartão e código de segurança. Esses dados serão compartilhados com nossa parceira para verificações de fraude. A FastObra não armazena dados bancários e/ou financeiros Também recebemos informações sobre você de fontes como instituições de proteção ao crédito e as incluímos em nossas bases de dados. \n \n **Cookies:** Cookies são arquivos de texto que nossos servidores enviam para o seu navegador e que são salvos no seu computador. Esses arquivos nos ajudam a coletar informações sobre sua navegação, suas preferências de navegação, o desempenho de nosso Site e outros. Você pode, a qualquer momento, excluir os cookies ou impedir que seu navegador aceite novos cookies, ajustando as configurações de privacidade do seu navegador.  **Não se preocupe, você pode solicitar a exclusão dos seus dados de todos nossos sistemas a qualquer momento, para isso Fale Conosco. Nós apenas guardaremos os registros que forem exigidos por lei.** \n \n ## O que fazemos com esses dados? ## \n \n **Comunicação:** Enviamos e-mails com informações de suas compras e solicitações, newsletters, campanhas publicitárias, pesquisas sobre nossos produtos e serviços, entre outros. **Nossas comunicações possuem a opção de “descadastramento”, caso você não queira receber nossos e-mails e mensagens.** Além disso, os dados informados serão usados se você precisar resetar sua senha. \n \n **Inteligência de Dados:** Elaboraremos análises estatísticas sobre o uso do nosso site, inclusive análises do seu perfil de compra e navegação, para aprimorar os serviços e produtos que te oferecemos. \n \n ## Com quem a FastObra compartilha esses dados? ## \n \n Em todos os casos, nós prezamos pela sua privacidade. Por isso, exigimos de nossos parceiros elevado padrão de segurança física e digital. \n \n **Processamento de Pagamento:** Nós não armazenamos Dados de Pagamento, mas compartilhamos essas informações com parceiros que fazem verificações de fraude e processam o pagamento. \n \n **Parceiros do Marketplace:** Quando você realiza uma compra de produtos de Lojas Parceiras, nós compartilhamos com eles as informações necessárias para a prestação dos serviços, emissão de Nota Fiscal e gestão de entrega dos produtos. \n \n **Empresas de Transporte e prestadoras de Serviços:** Compartilhamos suas informações, como nome, sobrenome, endereço e CEP, com as empresas transportadoras e prestadoras de serviços para que elas possam atender seus pedidos e solicitações. \n \n **Grupo Econômico:** A FastObra é parte da OakGroup, com sede em Santo André e atuação em outros setores. Por isso, nossas bases de dados e cadastros de Clientes, são compartilhadas com outras empresas do grupo no Brasil e no mundo. Se a FastObra for objeto de uma fusão, aquisição ou venda de ativos, seus dados serão transferidos para esses terceiros. Nesses casos, nós avisaremos você com antecedência. \n \n **Também compartilhamos as informações em casos de:** requisição e/ou solicitação de autoridades administrativas; investigação e/ou inquéritos policiais, de fraudes e/ou alterações indevidas de sistemas; ou ordem judicial. \n \n **Nós só compartilhamos seus dados quando necessário para cumprir nossas obrigações legais e contratuais, para atender suas solicitações e quando for do seu legítimo interesse.** \n \n ## O quão seguras estão suas informações? ## \n \n A FastObra adota recursos tecnológicos avançados para garantir a segurança de todos os dados coletados e armazenados. Entre as medidas de segurança implementadas estão criptografia e a instalação de barreiras contra o acesso indevido à base de dados (firewalls). Essas medidas de segurança podem ser verificadas por você, acesse o “cadeado de segurança” em seu navegador de internet. Se você tem menos de 18 anos, por favor use nosso Site somente acompanhando do seu responsável. \n \n O mundo está em constante mudança, assim como o nosso negócio. Por isso, esta Política também pode passar por alterações. Mas não se preocupe! Você será avisado com o resumo das alterações toda vez que a Política for atualizada. \n \n Você também pode falar diretamente com nosso encarregado nosso time de proteção de dados. \n \n E-mail: **sac@fastobra.com.br** \n \n Esperamos que essas informações tenham ajudado você! Em caso de dúvidas, Fale Conosco.",
+          "blockClass": "mainContent"
+      }
+    } 
+  }
+  

@@ -1,0 +1,114 @@
+{
+  "store.custom#nossas-lojas": {
+    "blocks": [
+      "responsive-layout.desktop#nl-desk", 
+      "responsive-layout.phone#nl-mob"
+    ]  
+  },   
+  "responsive-layout.desktop#nl-desk": {
+    "children": ["flex-layout.row#nl-content-desktop"]
+  },
+  "responsive-layout.phone#nl-mob": {
+    "children": ["flex-layout.row#nl-content-mobile"]
+  },
+  
+
+  "flex-layout.row#nl-content-desktop":{
+    "children": [
+      "flex-layout.col#nl-menu-lateral",
+      "flex-layout.col#nl-text-page" 
+    ],
+    "props": {
+      "paddingTop": "8",
+      "paddingBottom": "8",
+      "horizontalAlign": "between"
+    }
+  }, 
+  "flex-layout.row#nl-content-mobile":{
+    "children": [
+      "flex-layout.col#nl-text-page",
+      "flex-layout.row#nl-lateral-menu-mobile"
+    ]
+  }, 
+  "flex-layout.row#nl-lateral-menu-mobile":{
+    "children": [
+      "flex-layout.col#nl-menu1-mobile",
+      "flex-layout.col#nl-menu2-mobile"
+    ],
+    "props": { 
+      "preserveLayoutOnMobile": true, 
+      "paddingTop": "5",
+      "paddingBottom": "8",
+      "horizontalAlign": "between"
+    }
+  }, 
+
+
+  "flex-layout.col#nl-menu-lateral": {
+    "title": "Menu Lateral Desktop",
+    "children": [
+      "rich-text#nl-items-menu1-lateral",
+      "rich-text#nl-items-menu2-lateral" 
+    ],
+    "props": { 
+      "verticalAlign": "top", 
+      "width": "18%"
+    }
+  },
+  "flex-layout.col#nl-menu1-mobile": {
+    "children": [
+      "rich-text#nl-items-menu1-lateral" 
+    ],
+    "props": { 
+      "verticalAlign": "top", 
+      "width": "48%"
+    }
+  },
+  "flex-layout.col#nl-menu2-mobile": { 
+    "children": [
+      "rich-text#nl-items-menu2-lateral" 
+    ],
+    "props": { 
+      "width": "48%"
+    }
+  },
+  "flex-layout.col#nl-text-page": {
+    "title": "Conteúdo Principal",
+    "children": [ 
+      "rich-text#nl-txt-page-title",
+      "rich-text#nl-txt-page"
+    ],
+    "props": { 
+      "verticalAlign": "top", 
+      "width": "78%"
+    }
+  },  
+  "rich-text#nl-items-menu1-lateral": {
+    "title": "Coluna 1",
+    "props": { 
+      "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+      "blockClass": "menuinstitucionais"
+    }
+  },
+  "rich-text#nl-items-menu2-lateral": {
+    "title": "Coluna 2",
+    "props": { 
+      "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+      "blockClass": "menuinstitucionais"
+    }
+  },
+  "rich-text#nl-txt-page-title": {
+    "title": "Conteúdo Principal - Título",
+    "props": { 
+      "text": "# **Nossas Lojas** #", 
+      "blockClass": "mainTitle" 
+    } 
+  },
+  "rich-text#nl-txt-page": {
+    "title": "Conteúdo Principal - Texto",
+    "props": { 
+        "text": "**CD Santo André** \n Av Dom Bosco, 575 \n Lucinda – Santo André \n CEP 09240-500 \n  \n **Campinas** \n Alfredo da Costa Figo, 500 \n Faz Santa Candida – Campinas \n CEP 13087-534",
+        "blockClass": "mainContent"
+    }
+  } 
+}

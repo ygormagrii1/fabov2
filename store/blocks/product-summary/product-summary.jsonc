@@ -1,0 +1,176 @@
+{
+
+  // Product Summary vitrines
+  "product-summary.shelf#vitrine": {
+    "children": [ 
+      "stack-layout#prodsum",
+      "flex-layout.col#infos-product-summary-shelf",                 
+      "flex-layout.col#product-price-summary",
+      "responsive-layout.desktop#summary-flutuante"  
+    ],
+    "props": {
+      "blockClass": ["vitrine", "productLine"]
+    } 
+  }, 
+
+  // Product summary padrão 
+  "product-summary.shelf": {  
+    "children": [ 
+      "stack-layout#prodsum", 
+      "flex-layout.col#infos-product-summary",             
+      "condition-layout.product#summary-estoque",
+      "condition-layout.product#summary-estoque-price"           
+    ],
+    "props": {
+      "blockClass": ["productLine", "padrao"]
+    } 
+  },
+
+  "condition-layout.product#summary-estoque":{
+    "props": {
+      "conditions": [
+        { 
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.col#product-price-summary",
+      "Else": "rich-text#produto-indisponivel"
+    }
+  },
+
+  "condition-layout.product#summary-estoque-price":{
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "responsive-layout.desktop#summary-flutuante" 
+    }
+  },
+
+  "rich-text#produto-indisponivel": { 
+    "props": {
+      "text": "Produto Indisponível",
+      "blockClass": "indisponivel" 
+    }
+  },
+
+  "flex-layout.col#infos-product-summary": {
+    "children": [ 
+      "product-summary-name"  
+    ],
+    "props": { 
+      "blockClass": "infos-product-summary",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#infos-product-summary-shelf": {
+    "children": [ 
+      "product-summary-brand", 
+      "product-summary-name"  
+    ],
+    "props": { 
+      "blockClass": "infos-product-summary",
+      "preventVerticalStretch": true
+    }
+  },
+  
+
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#shelf",
+      "flex-layout.col#flags" 
+    ]
+  },
+
+  "flex-layout.col#flags": {
+    "children": [ 
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "product-price-savings#discount" 
+    ],
+    "props": { 
+      "blockClass": "flags-summary"
+    }
+  },
+
+  "product-price-savings#discount": {
+    "props": { 
+        "message": "- {savingsPercentage}",
+        "blockClass": "savingPercentage"
+    } 
+}, 
+
+  "product-summary-image#shelf": {
+    "props": { 
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 230 
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text"]
+  },
+
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+
+  "responsive-layout.desktop#summary-flutuante": {
+    "children": ["flex-layout.col#summary-flutuante"]
+  },
+  
+  "flex-layout.col#summary-flutuante": {
+    "children": ["product-quantity", "add-to-cart-button"],
+    "props": {  
+      "blockClass": "summary-flutuante"  
+    } 
+  },
+
+  // PRODUTOS APLICADOS HOME 
+
+  "product-summary.shelf#produtos-aplicados": {
+    "children": [
+      "product-summary-image#shelf", 
+      "flex-layout.col#infos-produtos-aplicados" 
+    ],
+    "props": {
+      "blockClass": "produtos-aplicados"
+    } 
+  },
+
+  "flex-layout.col#infos-produtos-aplicados": {
+    "children": [ 
+      "product-summary-name",      
+      "product-list-price#summary-produtos-aplicados",
+      "product-selling-price#summary-produtos-aplicados",
+      "product-installments#summary", 
+      "add-to-cart-button"
+    ],
+    "props": { 
+      "blockClass": "infos-product-summary",
+      "preventVerticalStretch": true  
+    }
+  },
+
+  "product-summary-name":{
+    "props": { 
+      "tag": "h2"
+    }
+  }
+
+}

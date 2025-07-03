@@ -1,0 +1,91 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-desktop"
+    },
+    "children": [
+      "custom-category-menu#header-all-category-menu", 
+      "menu-item#mais-vendidos",
+      "menu-item#mantas",
+      "menu-item#impermeabilizantes",
+      "menu-item#pintura",
+      "menu-item#saldao"
+    ]
+  },
+  "menu-item#mais-vendidos": { 
+    "props": {
+      "id": "menu-item-mais-vendidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/301?map=productClusterIds",
+        "noFollow": false,
+        "tagTitle": "Mais Vendidos",
+        "text": "Mais Vendidos"
+      }
+    }
+  },
+  "menu-item#mantas": {
+    "props": {
+      "id": "menu-item-mantas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": { 
+        "type": "internal",
+        "href": "/153?map=productClusterIds",
+        "noFollow": false,
+        "tagTitle": "Manta Asfálticas",
+        "text": "Manta Asfálticas"
+      }
+    }
+  },
+  "menu-item#impermeabilizantes": {
+    "props": {
+      "id": "menu-item-impermeabilizantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/154?map=productClusterIds",
+        "noFollow": false,
+        "tagTitle": "Impermeabilizantes",
+        "text": "Impermeabilizantes"
+      }
+    }
+  },
+  "menu-item#pintura": {
+    "props": {
+      "id": "menu-item-pintura",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal", 
+        "href": "/156?map=productClusterIds",
+        "noFollow": false,
+        "tagTitle": "Pintura e Decoração",
+        "text": "Pintura e Decoração"
+      }
+    }
+  },
+  "menu-item#saldao": {
+    "props": {
+      "id": "menu-item-saldao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,  
+      "itemProps": {
+        "type": "internal",
+        "href": "/158?map=productClusterIds",
+        "noFollow": false,
+        "tagTitle": "Saldão",
+        "text": "Saldão"
+      }
+    }
+  }
+}  

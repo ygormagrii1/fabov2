@@ -1,0 +1,72 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us"
+  },
+  "store.custom#faq": {
+    "path": "/faq"
+  },
+  "store.custom#contact-us": {
+    "path": "/contact-us"
+  },  
+  "store.custom#nossa-historia": { 
+    "path": "/institucional/nossa-historia"
+  },
+  "store.custom#nossas-lojas": {
+    "path": "/institucional/nossas-lojas"
+  },
+  "store.custom#politicas": {
+    "path": "/institucional/politicas"
+  },
+  "store.custom#compras-atacado": {
+    "path": "/institucional/compras-atacado"
+  }, 
+  "store.custom#contato": {
+    "path": "/institucional/contato"
+  },
+  "store.custom#formas-de-pagamento": {
+    "path": "/institucional/formas-de-pagamento"
+  },
+  "store.custom#devolucoes": {
+    "path": "/institucional/devolucoes"
+  },
+  "store.custom#frete-entrega": {
+    "path": "/institucional/frete-entrega" 
+  },
+  "store.custom#trabalhe-conosco": { 
+    "path": "/institucional/trabalhe-conosco"
+  },
+  "store.custom#obras-por-ambiente-cozinhas-e-banheiros": { 
+    "path": "/obras-por-ambiente-cozinhas-e-banheiros"
+  },
+  "store.custom#obras-por-ambiente-lajes-e-coberturas": { 
+    "path": "/obras-por-ambiente-lajes-e-coberturas"
+  },
+  "store.custom#obras-por-ambiente-piscinas-e-reservatorios": { 
+    "path": "/obras-por-ambiente-piscinas-e-reservatorios"
+  },
+  "store.custom#obras-por-ambiente-fundacao-e-reparo": { 
+    "path": "/obras-por-ambiente-fundacao-e-reparo"
+  },
+  "store.custom#mantas-asfalticas-colecao": { 
+    "path": "/colecao-mantas-asfalticas"
+  },
+  "store.custom#pintura-e-protecao": { 
+    "path": "/colecao-pintura-e-protecao"
+  },
+  "store.custom#colecao-ofertas": { 
+    "path": "/colecao-ofertas"
+  },
+  "store.custom#colecao-saldao": { 
+    "path": "/colecao-saldao"
+  },
+  "store.custom#colecao-impermeabilizantes": { 
+    "path": "/colecao-impermeabilizantes"
+  },
+  "store.custom#cimento-queimado": { 
+    "path": "/cimento-queimado"
+  },
+  "store.custom#colecao-viaplus": { 
+    "path": "/viaplus"
+  }
+}
+ 

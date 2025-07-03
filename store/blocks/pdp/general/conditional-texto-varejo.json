@@ -1,0 +1,59 @@
+{
+    "condition-layout.product#condition-texto-varejo": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productClusters",
+                    "arguments": {
+                        "id": "305"
+                    }
+                }
+            ],
+            "Then": "rich-text#texto-preco-varejo"
+        }
+    },
+
+    "condition-layout.product#condition-listprice-varejo": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productClusters",
+                    "arguments": {
+                        "id": "305"
+                    }
+                }
+            ],
+            "Then": "rich-text#empty-text",
+            "Else" : "product-list-price"
+        }
+    },
+    "rich-text#empty-text" : {
+        "props" : {
+            "text" :"",
+            "blockClass" : [""]
+        }
+    },
+
+    "rich-text#texto-preco-varejo" : {
+        "props" : {
+            "text" :"",
+            "blockClass" : ["texto-varejo"]
+        }
+    },
+
+
+    "condition-layout.product#conditional-price-info": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productClusters",
+                    "arguments": {
+                        "id": "305"
+                    }
+                }
+            ],
+            "Then": "rich-text#priceInfo",
+            "Else" : "rich-text#empty-text"
+        }
+    }
+}

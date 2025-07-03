@@ -1,0 +1,31 @@
+{
+    "store.custom#obras-por-ambiente-cozinhas-e-banheiros": {
+        "blocks": [
+            "search-result-layout.customQuery#obrasporambientecozinhasebanheiro"
+        ]
+    },
+
+    "search-result-layout.customQuery#obrasporambientecozinhasebanheiro": {
+        "title": "OBRAS POR AMBIENTE - COZINHAS E BANHEIROS",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "168",
+                "blockClass": [
+                    "colecao-lp"
+                ]
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+
+}

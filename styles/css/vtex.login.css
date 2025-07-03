@@ -1,0 +1,115 @@
+.accessCodeOptionBtn :global(.vtex-button){
+    color: #e74448;
+    background: #fff; 
+    border: 1px solid #e74448;
+    font-size: 12px;
+    font-weight: 700; 
+} 
+
+.accessCodeOptionBtn :global(.vtex-button):hover{
+    background: #e74448; 
+    color: #fff;
+    border: 1px solid #e74448;  
+} 
+
+.contentAlwaysWithOptions :global(.vtex-input-prefix__group){
+    border: 1px solid #005a9c;
+    border-radius: 8px;
+}
+
+.optionsListItem .buttonSocial :global(.vtex-button){ 
+    color: #da573b;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(to bottom, #f5f5f5, #f1f1f1);
+    background-repeat: repeat-x; 
+}
+
+.optionsListItem .oauthLabel{
+    font-weight: 700;
+}
+
+.formTitle{
+    font-size: 12px;
+    font-weight: normal;
+    color: #111110; 
+}
+
+.contentAlwaysWithOptions :global(.vtex-styleguide-9-x-input){
+    font-size: 12px;
+} 
+
+.emailPasswordOptionBtn :global(.vtex-button){
+    color: #e74448;
+    background: #fff; 
+    border: 1px solid #e74448;
+    font-size: 12px;
+    font-weight: 700;  
+} 
+
+.emailPasswordOptionBtn :global(.vtex-button):hover{
+    background: #e74448; 
+    color: #fff;
+    border: 1px solid #e74448; 
+} 
+
+.loginOptionsContainer .optionsListItem{
+    margin-bottom: 12px;
+}
+
+.contentAlwaysWithOptions{
+    margin-top: 40px;
+}
+
+.content--accountOptions .accountOptionsSectionTitle{
+    display: none;
+} 
+.content--accountOptions :global(.hover-c-action-primary){
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #363631; 
+    text-align: center;
+    display: block;
+    padding: 4px 0px;
+}
+
+.box{
+    /* max-width: 150px;  */
+    /* min-width: 150px; */
+    width: 151px;
+    right: -120px!important;
+    min-width: 10rem !important;
+} 
+
+.accountOptions {
+    width:90% ;
+}
+
+.arrowUp{
+    display: none;
+}
+
+.box .contentForm{
+    min-width: 100%;
+    padding: 0;
+}
+
+.content .contentForm{
+    min-width: 10rem;
+    padding: 0px;
+}
+
+.box .logoutButton{
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.box .contentForm :global(.mv2){
+    display: none;
+}

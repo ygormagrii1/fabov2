@@ -1,0 +1,62 @@
+{
+  "flex-layout.row#product-price": {
+    "children": [
+      "flex-layout.col#product-price",
+      "flex-layout.col#product-price-2"
+    ],
+    "props": {
+      "width": "100%",
+      "blockClass": "product-price",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "between"
+    }
+  },
+  "flex-layout.col#product-price": {
+    "children": [
+      "condition-layout.product#condition-texto-varejo",
+      //"condition-layout.product#condition-listprice-varejo",
+      "flex-layout.row#prices",
+      "pix-flag",
+      "product-installments#summary"
+      //"product-selling-price#regular-price"
+    ],
+    "props": {
+      "blockClass": [
+        "product-price",
+        "pdp-price-row"
+      ]
+    }
+  },
+  "flex-layout.row#prices": {
+    "children": [
+      "product-list-price",
+      "pix-price"
+
+    ],
+    "props": {
+      "blockClass": [
+        "prices"
+      ]
+    }
+  },
+  "flex-layout.col#product-price-2": {
+    "children": [
+      "whosale-price-custom",
+      "condition-layout.product#conditional-price-info"
+    ]
+  },
+  "product-selling-price#regular-price": {
+    "props": {
+      "blockClass": "regular-price",
+      "message": "{sellingPriceValue} no cartão de crédito"
+    }
+  },
+  "rich-text#priceInfo": {
+    "props": {
+      "blockClass": [
+        "precoPromocaiInfo"
+      ]
+    }
+  }
+}

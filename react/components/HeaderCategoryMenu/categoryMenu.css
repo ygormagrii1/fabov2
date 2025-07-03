@@ -1,0 +1,293 @@
+.itemContainer {
+  max-height: 100%;
+}
+
+.itemContainer--department {
+
+} 
+
+.container{
+  width: 160px;
+}
+
+.itemContainer--category {
+  padding: 0;
+  z-index: 10; 
+  max-height: unset;
+  background: transparent;
+  border: none;
+  max-width: 1400px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 47px!important;
+}
+
+.animation {  
+  position: relative;
+  display: block;
+  transform: translateX(0%)!important;
+  width: 100%!important;
+  max-height: 100%;
+  height: 100%;
+  left: 0px;
+}
+
+@media only screen and (max-width: 40rem) {
+  body.sidebarOpen {
+      overflow-y: hidden;
+  }
+}
+
+.sidebarHeader{
+  display: none;
+}
+
+.container {
+
+}
+
+.section--department {
+
+}
+
+.section--category {
+  display: block;
+  width: 266px;
+  margin: 0;
+  background: #fff;
+  box-shadow: 0 0 6px #d2d2d2;
+  overflow: visible;
+  position: relative;
+  padding: 0px;  
+  max-width: 266px!important;  
+  margin: 0!important;
+}
+
+.departmentList {
+  height: auto;
+} 
+
+.departmentLink { 
+  border: none;
+  font-family: 'Raleway',sans-serif;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #363631; 
+  margin: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.departmentLink:hover { 
+  color: #003a7f;
+}
+
+.icon{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-right: 8px;
+  top: 3px; 
+}
+
+.icon i{
+  width: 15px;
+  height: 2px;
+  display: block;
+  background: #363631;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  position: absolute;
+}
+
+.icon .um{
+  top: 25%;
+}
+
+.icon .dois{
+  top: 50%;
+}
+
+.icon .tres{ 
+  margin-bottom: 0;
+}
+
+
+.firstLevelList { 
+  padding: 0; 
+} 
+
+.firstLevelList:hover .submenuGroup{
+  left: 266px;
+  opacity: 1;  
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.firstLevelLinkContainer {
+
+}
+
+.firstLevelLink {
+  font-family: 'Raleway', sans-serif;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #6a6a6a;
+  display: block;
+  padding: 12px 0;  
+  transition: all 0.3s;
+}
+ 
+.firstLevelLink:hover { 
+  color: #003a7f;
+  transition: all 0.3s;
+}
+
+.secondLevelList {
+
+}
+.secondLevelLinkContainer {
+
+}
+.secondLevelLink {
+  font-family: 'Raleway', sans-serif;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #363631;
+  display: block;
+  padding: 12px 0;
+}
+
+.secondLevelLink:hover {
+  color: #003a7f;
+  font-weight: 600;  
+} 
+
+
+
+.submenuList {
+  padding: 20px 0 25px 30px;
+  border-top: 3px solid #003a7f;
+  overflow: visible;
+  flex-direction: unset;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.submenuItem {
+  width: 100%;
+}
+ 
+.menuContainerNav{  
+  width: 100%; 
+} 
+
+.sidebarOpen {
+
+}
+
+.sidebarScrim {
+
+}
+
+.sidebar {
+  box-shadow: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sidebarHeader {}
+
+.sidebarContent {}
+
+
+
+.sidebarContainer {} 
+
+.menuContainer {}
+
+.sidebarItemContainer {
+  border-top: 1px solid #e3e3e3;
+  padding: 13px 24px;
+}
+
+.submenuGroup {
+  width: 266px;
+  height: calc(100% + 3px);
+  position: absolute;
+  top: 0px; 
+  left: 220px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  background: #e3e3e3;
+  border-top: 3px solid #003a7f;
+  padding: 20px 0 25px 30px;
+  box-shadow: 6px 6px 6px #00000029;
+  transition: all 0.3s;
+}
+
+.custom-header-menu .itemContainer--department { 
+    display: none!important;
+}
+.custom-header-menu .itemContainer--department:first-child { 
+    display: block!important;
+} 
+
+.sidebarItem :global(.list) .sidebarItem .sidebarItemContainer span{
+  font-weight: 400;
+  font-size: 13px;
+
+}
+.sidebarItem :global(.list) .sidebarItem .sidebarItemContainer svg{
+  width: 13px;
+}
+
+.sidebarItem span:first-child{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  width: 100%;  
+  line-height: 20px;
+  color: #363631;
+  font-weight: bold; 
+}
+
+.sidebarItem span:last-child{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: #363631;
+  font-weight: bold;  
+}  
+
+.sidebarItem .c-muted-2{  
+  display: none;
+}
+ 
+.listcustom{ 
+  display: none;
+}
+
+.plusIcon, .minusIcon{
+  width: 10px;
+  fill: #363631;
+  color: #363631;
+}
+ 
+.sidebarItem .sidebarItem .sidebarItemContainer{
+  border: none; 
+  padding: 12px 14px; 
+} 
+
+.sidebarScrim{
+  display: none; 
+}

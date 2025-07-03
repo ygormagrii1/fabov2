@@ -1,0 +1,185 @@
+{
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+
+  "search-bar": {
+    "blocks": [ 
+    ],
+    "props": {
+      "placeholder": "O que você procura?",
+      "blockClass": "search-bar-header"     
+    }  
+  }, 
+
+  "autocomplete-result-list.v2": { 
+    "blocks": [ 
+      "product-summary.shelf"
+    ],
+    "props": {
+      "maxSuggestedProducts": 2,
+      "maxTopSearches": 10,  
+      "maxHistory": 5,
+      "autocompleteWidth": 90
+    }
+  },
+
+
+  "flex-layout.col#category-menu": { 
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
+  },
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/logo-fastobra.png"  
+    }
+  },
+  
+  "drawer": {
+    "children": [ 
+      "flex-layout.col#drawer-menu"
+    ],
+    "props": {  
+      "blockClass": "drawer-menu",  
+      "maxWidth": "260px"
+    }
+  }, 
+
+  "flex-layout.col#drawer-menu": {
+    "children": [
+      "rich-text#login-drawer",
+      "drawer-close-button#drawer-menu",
+      "menu#drawer" 
+    ],
+    "props": { 
+      "blockClass": "drawer-menu"
+    }
+  }, 
+
+  "drawer-close-button#drawer-menu":{
+    "props":{ 
+      "type":"filled", 
+      "text": "DEPARTAMENTOS"  
+    }
+  },
+   
+  "rich-text#login-drawer": {
+    "props": {
+      "text": "[Faça login ou Cadastre-se](/login?ReturnUrl=/)",
+      "blockClass": "login-drawer"
+    }
+  },
+   
+  "menu#drawer": {
+    "children": [
+      "custom-category-menu#mobile" 
+    ],
+    "props": { 
+      "orientation": "vertical" 
+    } 
+  }, 
+   
+  "custom-category-menu#mobile": {
+    "props": { 
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [],  
+      "sortSubcategories": "name",
+      "mobileMode": true
+    }
+  },
+
+  "flex-layout.row#whatsapp-topo": {
+    "children": [
+      "rich-text#topo-whatsapp"
+    ],
+    "props": {
+      "blockClass": [
+        "bloco-whatsapp-topo"
+      ],  
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "rich-text#topo-whatsapp": {  
+    "props": { 
+      "text": "[Compre pelo Whatsapp](https://api.whatsapp.com/send?target=_blankphone=5511940168899)", 
+      "blockClass": "texto-whatsapp"
+    } 
+  },  
+  
+  "flex-layout.row#aviso-topo": {
+    "children": [   
+      "rich-text#topo-aviso",
+      "flex-layout.col#flutuante-atendimento"
+    ],
+    "props": {
+      "blockClass": [
+        "bloco-whatsapp-topo",
+        "flutuante" 
+      ],
+      "preventHorizontalStretch": true
+    } 
+  },
+
+  "rich-text#topo-aviso": {
+    "props": {
+      "text": "Central de\n atendimento ",
+      "blockClass": "texto-atendimento"
+    }
+  },
+
+  "login": {
+    "props": {
+      "iconSize": 30,
+      "logInButtonBehavior": "link",
+      "accountOptionLinks": [
+        {
+          "label": "Minha conta", 
+          "path": "/account#/profile"
+        }, 
+        {
+          "label": "Meus pedidos", 
+          "path": "/account#/orders"
+        },
+        {
+          "label": "Favoritos", 
+          "path": "/account/#/wishlist"
+        } 
+      ]
+    }
+  },
+
+  "flex-layout.col#flutuante-atendimento":{
+    "children": [
+      "rich-text#flutuante-atendimento"
+    ],
+    "props": {
+      "blockClass": [
+        "flutuante-atendimento"
+      ]
+    } 
+  }, 
+
+  "rich-text#flutuante-atendimento": {
+    "props": {
+      "text": "\n**Contato** \n sac@fastobra.com.br  [Telefone: (11) 3103 4660](tel:11940168899)  [Whatsapp: (11) 9.4016-8899](https://api.whatsapp.com/send?phone=5511940168899) \n \n **ATENDIMENTO** \n Segunda à Quinta - 8h às 18h \n Sexta - 8h às 17h",
+      "blockClass": "flutuante-atendimento" 
+    } 
+  }
+
+} 

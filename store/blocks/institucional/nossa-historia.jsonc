@@ -1,0 +1,116 @@
+{
+    "store.custom#nossa-historia": {
+      "blocks": [
+        "responsive-layout.desktop#nh-desk", 
+        "responsive-layout.phone#nh-mob"
+      ]  
+    },   
+    "responsive-layout.desktop#nh-desk": {
+      "children": ["flex-layout.row#nh-content-desktop"]
+    },
+    "responsive-layout.phone#nh-mob": {
+      "children": ["flex-layout.row#nh-content-mobile"]
+    },
+    
+  
+    "flex-layout.row#nh-content-desktop":{
+      "children": [
+        "flex-layout.col#nh-menu-lateral",
+        "flex-layout.col#nh-text-page" 
+      ],
+      "props": {
+        "paddingTop": "8",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+    "flex-layout.row#nh-content-mobile":{
+      "children": [
+        "flex-layout.col#nh-text-page",
+        "flex-layout.row#nh-lateral-menu-mobile"
+      ]
+    }, 
+    "flex-layout.row#nh-lateral-menu-mobile":{
+      "children": [
+        "flex-layout.col#nh-menu1-mobile",
+        "flex-layout.col#nh-menu2-mobile"
+      ],
+      "props": { 
+        "preserveLayoutOnMobile": true, 
+        "paddingTop": "5",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+  
+  
+    "flex-layout.col#nh-menu-lateral": {
+      "title": "Menu Lateral Desktop",
+      "children": [
+        "rich-text#nh-items-menu1-lateral",
+        "rich-text#nh-items-menu2-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "18%"
+      }
+    },
+    "flex-layout.col#nh-menu1-mobile": {
+      "title": "Menu Lateral Mobile",
+      "children": [
+        "rich-text#nh-items-menu1-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#nh-menu2-mobile": { 
+      "children": [
+        "rich-text#nh-items-menu2-lateral" 
+      ],
+      "props": { 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#nh-text-page": {
+      "title": "Conteúdo Principal",
+      "children": [ 
+        "rich-text#nh-txt-page-title",
+        "rich-text#nh-txt-page"
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "78%"
+      }
+    },  
+    "rich-text#nh-items-menu1-lateral": {
+      "title": "Coluna 1",
+      "props": { 
+        "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#nh-items-menu2-lateral": {
+      "title": "Coluna 2",
+      "props": { 
+        "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#nh-txt-page-title": {
+      "title": "Conteúdo Principal - Título",
+      "props": { 
+        "text": "# **Nossa História** #" ,
+        "blockClass": "mainTitle" 
+      } 
+    },
+    "rich-text#nh-txt-page": {
+      "title": "Conteúdo Principal - Texto",
+      "props": { 
+          "text": "Muito prazer, somos a FastObra, uma marca da OakGroup que já possui mais de 20 anos de experiência fornecendo as melhores soluções no mercado da construção civil e indústria. \n \n Estamos aqui para te ajudar a construir ou reformar e tornar sua obra mais rápida, prazerosa e divertida, temos uma ampla linha de produtos das melhores marcas do mercado e sempre traremos o que há de mais atual para você! \n \n Entregamos direto na sua obra ou no endereço de sua escolha, ou então você pode retirar conosco nas nossas unidades em nosso CD Santo Andre ou na nossa filial em Campinas. \n \n FastObra, sua obra no seu tempo. \n Conte a gente!",
+          "blockClass": "mainContent"
+      }
+    } 
+  }
+  

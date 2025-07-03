@@ -1,0 +1,31 @@
+{
+    "store.custom#obras-por-ambiente-piscinas-e-reservatorios": {
+        "blocks": [
+            "search-result-layout.customQuery#obrasporambientepiscinasereservatorios"
+        ]
+    },
+
+    "search-result-layout.customQuery#obrasporambientepiscinasereservatorios": {
+        "title": "OBRAS POR AMBIENTE - PISCINAS E RESERVATORIOS",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "169",
+                "blockClass": [
+                    "colecao-lp"
+                ]
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+
+}

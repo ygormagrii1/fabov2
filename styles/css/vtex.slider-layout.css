@@ -1,0 +1,109 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+
+.sliderTrackContainer {
+  max-width: 1920px;
+}
+
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+  min-height: 550px;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+}
+
+.caretIcon{
+  display: none;
+}
+
+.sliderArrows--carousel{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  z-index: 1;
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOCIgaGVpZ2h0PSIzOCIgdmlld0JveD0iMCAwIDM4IDM4Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMTExMTEwO29wYWNpdHk6MC43NTE7fS5ie2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PGNpcmNsZSBjbGFzcz0iYSIgY3g9IjE5IiBjeT0iMTkiIHI9IjE5Ii8+PHBhdGggY2xhc3M9ImIiIGQ9Ik05Ljk5MywxOC45YS45OTMuOTkzLDAsMCwxLS43NjUtMS42MjlsNC40NDktNS4zMjNMOS4zODcsNi42MTlhMS4wMTUsMS4wMTUsMCwxLDEsMS42LTEuMjUxbDQuOCw1Ljk1OWEuOTkzLjk5MywwLDAsMSwwLDEuMjYxbC00Ljk2Niw1Ljk1OUEuOTkzLjk5MywwLDAsMSw5Ljk5MywxOC45WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi4zNzYgNy4wOTQpIi8+PC9zdmc+)!important;
+}
+
+.sliderLeftArrow--carousel{
+  transform: rotate(180deg);
+}
+
+.sliderLeftArrow--fullbanner{
+  left: 8vw;
+}
+
+.sliderRightArrow--fullbanner{
+  right: 8vw;
+}
+
+
+
+.slide--departamentos {
+  width: 14.7%!important;
+  margin-left: 0.4%!important;
+  margin-right: 0.4%!important;
+}
+
+.sliderLayoutContainer--shelf .sliderTrackContainer--shelf{
+  padding-top: 35px;
+}
+
+.sliderLayoutContainer--shelf .paginationDotsContainer--shelf{
+  top: 0px;
+  left: 0px;
+  right: unset;
+  bottom: unset;
+}
+
+.sliderRightArrow--shelf {
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+
+.sliderLeftArrow--shelf{
+  position: absolute;
+  top: -15px;
+  right: 45px;
+  left: unset;
+}
+
+.sliderTrackContainer--produtos-aplicados .sliderTrack--produtos-aplicados{
+    display: block;
+    width: 100%!important;
+    transform: translate3d(0px, 0px, 0px)!important;
+}
+
+.slideChildrenContainer--fullbanner .imageElementLink{
+  width: 100%;
+  height: 100%;
+}
+
+@media(min-width: 768px){
+  .sliderLayoutContainer--shelf .sliderTrackContainer--shelf{
+    padding-top: 35px;
+  }
+
+
+  .slide--shelf:hover {
+    border-radius: 4px;
+    box-shadow: 0 1px 6px 3px rgb(181 181 181 / 15%);
+    border: 1px solid #ececec;
+  }
+  .slide--shelf {
+    margin: 0px 15px;
+  }
+  .slide--shelf .slideChildrenContainer--shelf{
+    padding-bottom: 70px;
+  }
+}

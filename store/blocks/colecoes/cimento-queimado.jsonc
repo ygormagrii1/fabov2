@@ -1,0 +1,31 @@
+{
+    "store.custom#cimento-queimado": {
+        "blocks": [
+            "search-result-layout.customQuery#cimentoqueimado"
+        ]
+    },
+
+    "search-result-layout.customQuery#cimentoqueimado": {
+        "title": "Cimento queimado",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "304",
+                "blockClass": [
+                    "colecao-lp"
+                ]
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+
+}

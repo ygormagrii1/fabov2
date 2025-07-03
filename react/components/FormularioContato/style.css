@@ -1,0 +1,100 @@
+.formulariocontato{
+    display: grid;
+    grid-template-columns: 100%; 
+    gap: 18px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+ 
+.formulariocontato button{
+    height: 42.43px;
+    background: #EA5B0B;
+    border-radius: 5.50155px; 
+    display: block;
+    border: none;
+    width: 200px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .6px;
+    border: none;
+    display: block;
+    text-align: center; 
+    transition: all 0.4s;
+    padding: 12px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.formulariocontato label{
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #111110;
+    font-size: 12px;
+    margin: 20px 0 5px 8px;
+    display: block;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.formulariocontato input{
+    outline: unset;
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    border-radius: 3px;
+    padding: 15px;
+    box-sizing: border-box;
+} 
+.formulariocontato textarea{
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    border-radius: 3px;
+    padding: 15px;
+    box-sizing: border-box;
+} 
+ 
+.col100{
+    width: 100%;
+}
+.sucessomensagem{
+    display: none;    
+    text-align: center;
+    background: #d5ecba;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 500;
+    color: #147317;
+}
+
+.sucessomensagem.visible{
+    display: block;
+}
+
+@media (min-width: 701px){
+    .formulariocontato .duascolunas{
+        display: flex; 
+        justify-content: space-between;
+    }
+    .colunas{
+        width: 48%;
+    }
+}

@@ -1,0 +1,95 @@
+.userInfo .userImage{
+    display: none;
+}
+
+.userInfo .userGreeting{
+    font-size: 12px;
+}
+
+.menuLinks :global(.vtex-account_menu-link),
+.menuLinks .menuLink{
+    padding: 0px 10px;
+}
+
+.menuLinks :global(.vtex-account_menu-link):global(.b--action-primary){
+    border-color: #ff6344;
+    color: #111110;
+    font-weight: bold;
+}
+
+.menuLinks :global(.vtex-account_menu-link),
+.menuLinks .menuLink{
+    color: #003a7f;
+}
+
+.menuLinks :global(.vtex-account_menu-link):hover,
+.menuLinks .menuLink:hover{
+    color: #ff6344;
+}
+
+:global(.vtex-pageHeader__container) :global(.vtex-pageHeader__title){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+:global(.vtex-pageHeader__container) {
+    padding: 1rem;
+}
+
+.dataEntryLabel{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6a6a6a;
+    font-size: 1rem;
+}
+
+.boxContainerBody :global(.vtex-button),
+.boxContainerFooter :global(.vtex-button){
+    background-color: #ff6344;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 46px;
+    border: none;
+}
+
+.boxContainerBody :global(.vtex-button__label),
+.boxContainerFooter :global(.vtex-button__label){
+    font-size: 12px;
+    font-weight: 700;
+}
+
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper){
+    display: none;
+}
+
+:global(.vtex-pageHeader__container) :global(.vtex-pageHeader-link__container) :global(.vtex-button){
+    background: #ff6344;
+    color: #fff;
+    transition: all 0.4s;
+    padding: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+:global(.vtex-my-account-1-x-boxContainerFooter){
+    padding: 0px 20px 30px 20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--pdp-price-row) :global(.tfcvxe-store-theme-1-x-containerPricePixFlag){
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 15px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--pdp-price-row) :global(.tfcvxe-store-theme-1-x-containerPricePixFlag) p{
+  color: #199a64;
+  font-size: 15px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--pdp-price-row) :global(.tfcvxe-store-theme-1-x-containerPixFlag){
+  max-width: unset;
+  height: 38px;
+}
+

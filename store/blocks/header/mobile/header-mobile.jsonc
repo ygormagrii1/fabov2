@@ -1,0 +1,52 @@
+{
+    "header-layout.mobile": {
+        "children": [             
+            "custom-styles",
+            "cookie",
+            "flex-layout.row#top-header",
+            "sticky-layout#header-mobile",
+            "flex-layout.row#search-mobile"
+        ] 
+    },
+
+    "sticky-layout#header-mobile": {
+        "children": [
+            "flex-layout.row#header-mobile"
+        ]
+    },
+
+    "flex-layout.row#search-mobile": {
+        "children": [
+            "search-bar"
+        ], 
+        "props": {
+            "blockClass": "search-mobile"
+        } 
+    },
+    
+    "flex-layout.row#header-mobile": {
+        "children": [
+            "drawer",
+            "logo#mobile", 
+            "minicart.v2"
+        ], 
+        "props": {
+            "blockClass": "main-header-mobile",
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "colJustify": "between"
+        } 
+    },
+
+    "logo#mobile": {
+        "props": {
+            "title": "Logo",
+            "href": "/",
+            "url": "/arquivos/logo-fastobra.png",
+            "width": "180",
+            "height": "31"
+        }
+    }
+    
+}

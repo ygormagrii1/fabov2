@@ -1,0 +1,22 @@
+{
+    "flex-layout.row#top-header": {
+        "title": "Header avisos importantes",
+        "props": {
+            "blockClass": ["menu-link", "top-header"],
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": true
+        },
+        "children": [ 
+            "rich-text#aviso-topo-frete"
+        ]
+    },
+
+    "rich-text#aviso-topo-frete": {
+        "props": {
+            "text": "<span class='vtex-rich-text-0-x-paragraph--aviso-frete-gratis-topo'> Frete Grátis </span>  em compras acima de R$199,90 (Consulte as regiões)",
+            "blockClass": "aviso-topo-frete"
+        }
+    }
+}

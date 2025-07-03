@@ -1,0 +1,116 @@
+{
+    "store.custom#frete-entrega": {
+      "blocks": [
+        "responsive-layout.desktop#fe-desk", 
+        "responsive-layout.phone#fe-mob"
+      ]  
+    },   
+    "responsive-layout.desktop#fe-desk": {
+      "children": ["flex-layout.row#fe-content-desktop"]
+    },
+    "responsive-layout.phone#fe-mob": {
+      "children": ["flex-layout.row#fe-content-mobile"]
+    },
+    
+  
+    "flex-layout.row#fe-content-desktop":{
+      "children": [
+        "flex-layout.col#fe-menu-lateral",
+        "flex-layout.col#fe-text-page" 
+      ],
+      "props": {
+        "paddingTop": "8",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+    "flex-layout.row#fe-content-mobile":{
+      "children": [
+        "flex-layout.col#fe-text-page",
+        "flex-layout.row#fe-lateral-menu-mobile"
+      ]
+    }, 
+    "flex-layout.row#fe-lateral-menu-mobile":{
+      "children": [
+        "flex-layout.col#fe-menu1-mobile",
+        "flex-layout.col#fe-menu2-mobile"
+      ],
+      "props": { 
+        "preserveLayoutOnMobile": true, 
+        "paddingTop": "5",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+  
+  
+    "flex-layout.col#fe-menu-lateral": {
+      "title": "Menu Lateral Desktop",
+      "children": [
+        "rich-text#fe-items-menu1-lateral",
+        "rich-text#fe-items-menu2-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "18%"
+      }
+    },
+    "flex-layout.col#fe-menu1-mobile": {
+      "title": "Menu Lateral Mobile",
+      "children": [
+        "rich-text#fe-items-menu1-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#fe-menu2-mobile": { 
+      "children": [
+        "rich-text#fe-items-menu2-lateral" 
+      ],
+      "props": { 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#fe-text-page": {
+      "title": "Conteúdo Principal",
+      "children": [ 
+        "rich-text#fe-txt-page-title",
+        "rich-text#fe-txt-page"
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "78%"
+      }
+    },  
+    "rich-text#fe-items-menu1-lateral": {
+      "title": "Coluna 1",
+      "props": { 
+        "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#fe-items-menu2-lateral": {
+      "title": "Coluna 2",
+      "props": { 
+        "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#fe-txt-page-title": {
+      "title": "Conteúdo Principal - Título",
+      "props": { 
+        "text": "# **Frete e Entrega** #" ,
+        "blockClass": "mainTitle" 
+      } 
+    },
+    "rich-text#fe-txt-page": {
+      "title": "Conteúdo Principal - Texto",
+      "props": { 
+          "text": "A Política de Entrega de Produtos abaixo constitui parte integrante dos Termos e Condições de Uso. \n \n **1. Identificação** \n Este site é de propriedade, mantido, e operado por Comercial Antonio Carvalho Ltda., com endereço na Av. Dom Bosco, 575 – Vila Lucinda – Santo André – SP – Cep 09240-500, inscrita no CNPJ/MF sob o nº 02.559.428/0001-02, com Inscrição Estadual nº 626.350.592.116. \n \n **2. Contato – CAF (Central de Atendimento FastObra)** \n Caso o Usuário necessite de qualquer informação, esclarecimento ou atendimento com relação a esta Política de Pagamentos, a FastObra disponibiliza o CAF para receber todas as comunicações que o Usuário desejar fazer. O CAFO opera por meios dos canais de comunicação listados abaixo: (a) Presencialmente, em qualquer uma de nossas unidades, durante os horários de funcionamento; (b) Pelo telefone 3103-4660, de segunda a quinta das 8h às 18h e sextas das 8h às 17h; (c) Por correspondência endereçada à FastObra, Av. Dom Bosco, 575 – Vila Lucinda – Santo André – SP – Cep 09240-500, sempre acompanhada das informações de contato do consumidor, para que possamos finalizar o atendimento. Em todos os casos, o Usuário receberá, pelo mesmo canal de comunicação, uma confirmação imediata do recebimento da sua demanda, que será tratada e respondida em um prazo máximo de 5 (cinco) dias. Além disso, a FastObra disponibiliza neste site uma seção de FAQ (Perguntas mais frequentes), bem como suas demais políticas: Política de Trocas e Devoluções, Política de Entrega de Produtos, Política de Privacidade e Segurança e, finalmente, os Termos e Condições de Uso deste site. Todos estes documentos podem ser consultados online ou baixados pelos usuários em formato PDF para consulta off-line e arquivo. \n \n **3. Locais atendidos** \n A FastObra opera, diretamente ou por meio de terceiros contratados, serviços de entrega em todos os estados do Brasil. No entanto, a FastObra não disponibiliza entrega de produtos adquiridos neste Site em outros países ou territórios estrangeiros. \n \n **4. Prazos de entrega** \n Durante o processo de Compra, a FastObra informará ao Cliente uma estimativa de prazo para a entrega dos Produtos. Essa estimativa leva em conta os produtos adquiridos, as suas quantidades, o estoque disponível e a distância entre nossas centrais de distribuição e o endereço de entrega informado pelo Cliente. O prazo de entrega será contado a partir da data de aprovação do pedido, que pode ocorrer em até 3 (três) dias úteis para pagamentos com cartão de crédito ou 2 (dois) dias úteis para compras feitas com boleto. \n \n **5. Horário de entrega e agendamento** \n A FastObra efetua as entregas de Produtos entre segunda-feira e sexta-feira, das 08:00 às 18:00, podendo haver variações em casos excepcionais. Caso o endereço de entrega se localize em um condomínio, o consumidor deverá informar, no ato da compra, quaisquer restrições de horário de entrega, onde as entregas devem ser feitas no condomínio e para quem devem ser entregues, tendo em vistas as regras existentes. \n A FastObra disponibiliza o serviço de agendamento de entrega, sem custo adicional. Por meio deste serviço, o consumidor poderá indicar, no ato da compra, a data e o turno em que a entrega dos produtos deverá ser realizada. A FastObra agenda as entregas entre segunda-feira e sexta-feira e em dois turnos: manhã (das 08:00 às 11:00) e tarde (das 12:00 às 18:00). Não será possível alterar a data ou o turno da entrega após o agendamento. A data e turno agendados serão concretizados apenas após a confirmação do pagamento. Se a confirmação do pagamento de seu pedido prejudicou a data inicial de agendamento da sua entrega, uma nova data será disponibilizada. \n \n **6. Valor do frete** \n O valor do frete da entrega dos Produtos é calculado automaticamente pelo Site no momento da Compra, a partir do peso, volume e quantidade dos Produtos adquiridos, assim como da distância entre nossos centros de distribuição e o local de entrega informado pelo Cliente. A seu exclusivo critério, a FastObra poderá disponibilizar em seu Site categorias especiais de frete, específicas para alguns produtos e para algumas localidades, de forma definitiva ou temporária. Neste caso, é possível que cada categoria ofereça preços e prazos de entrega diferentes, cabendo ao Cliente escolher aquela categoria que atenda a suas expectativas. \n \n **7. Condições da entrega** \n A FastObra entregará os Produtos adquiridos em sua embalagem original. Considerando que os entregadores da FastObra não são autorizados a montar, instalar ou desmontar os Produtos, retirar portas ou janelas, transportar os Produtos por escadarias ou içá-los pela parte externa do edifício ou, ainda, realizar qualquer atividade que seja diversa da simples entrega do Produto, é necessário que o consumidor certifique-se que as dimensões do Produto são compatíveis com as dimensões das portas, elevadores, passagens e corredores do local de entrega por ele escolhido. Em edifícios, a entrega será efetuada no local da portaria, sendo o Cliente exclusivamente responsável pela guarda e transporte dos produtos até seu andar e unidade. Para que a entrega seja realizada, é necessário que o Cliente autorize uma pessoa maior de 18 anos (amigos, parentes, porteiros ou outra) para receber e conferir os produtos e assinar o respectivo protocolo. O serviço de entrega não inclui qualquer outra atividade por parte dos entregadores, estando a Leroy Merlin isenta de qualquer obrigação de instalação, montagem, desmontagem ou teste dos produtos adquiridos e entregues. Produtos básicos (tijolo, bloco, telha, vergalhão, laje, coluna, areia, brita, entre outros) serão entregues na calçada em frente ao endereço de entrega, devendo o Cliente se encarregar de transportá-los para o interior do local. \n \n **8. Recusa de recebimento** \n  O Cliente poderá e deverá verificar os seguintes aspectos no momento do recebimento: (i) se a embalagem estiver aberta, violada ou danificada; (ii) se o Produto estiver avariado pelo transporte, aberto, violado ou usado; (iii) se os Produtos entregues não corresponderem aos Produtos adquiridos pelo Site e/ou à nota fiscal; ou, ainda, (iv) se o conteúdo das embalagens estiver incompleto, sem partes ou acessórios dos produtos adquiridos. Em caso de qualquer divergência, o Cliente deverá recusar-se a receber o Produto em questão e entrar em contato com o CAF (Central de Atendimento FastObra), para imediata solução do problema identificado. Caso haja o recebimento indevido do produto, o Cliente poderá requerer sua troca apenas nos casos previstos na Política de Trocas e Devoluções. \n \n **9. Tentativas de entrega** \n  A FastObra entregará os Produtos adquiridos, no prazo estabelecido e no endereço informado pelo Cliente. Caso não seja possível a FastObra realizar a entrega dos Produtos por ausência do Cliente, de pessoa autorizada, por restrições de horário do condomínio ou por limitações físicas que impeçam a entrega ou, ainda, por erro do Cliente em indicar o local correto da entrega no ato da compra dos Produtos, a FastObra fará mais duas tentativas subsequentes. Caso as três tentativas de entrega fracassem, os produtos adquiridos serão devolvidos à central de distribuição, o pedido será cancelado e o reembolso ocorrerá nos mesmos termos previstos na Política de Trocas e Devoluções com relação à devolução por arrependimento (item 4.5 da referida Política). No caso de entregas agendadas, será feita apenas uma tentativa de entrega, na data e turno agendados. Em caso de fracasso desta entrega, a FastObra entrará em contato com o Cliente para definir uma segunda data de entrega. Se esta segunda entrega for sem sucesso, os Produtos adquiridos serão devolvidos à central de distribuição e o pedido será cancelado. \n \n **10. Saiba tudo sobre o Clique e Retire** \n  A FastObra disponibiliza a possibilidade de realização da compra pelo site e retirada pelo próprio cliente nas nossas unidades. \n **10.1.** Como utilizar? Para aderir a nova modalidade, basta escolher os produtos que deseja comprar (sempre indicados com um carrinho), selecionar a opção “ Retire na Loja” no momento do pagamento (verifique o local em que você deverá buscar o pedido), finalizar o pedido e aguardar por mais informações. Quando o produto estiver disponível para a retirada, enviaremos um e-mail informando. \n **10.2.** Sobre a compra após aprovação do pedido pela instituição financeira, o pedido estará disponível para a retirada no ponto de retirada escolhido, conforme estabelecido no ato da compra. Caso a aprovação do pagamento do pedido ocorra até às 14h, o mesmo poderá ser retirado na loja no dia útil seguinte. Para o serviço “Clique e Retire”, não será cobrado nenhum valor relativo a frete ou taxa de entrega. É imprescindível que as informações de contato do cadastro estejam atualizadas e isso garantirá sucesso, em possíveis contatos que se façam necessários. \n **10.3.** Sobre a retirada será encaminhado um e-mail para o cliente, comunicando que o pedido está disponível para a retirada. O cliente poderá conferir o status de seu pedido na seção de “Minha conta” contido no site. O pedido ficará disponível para retirar no ponto de retirada escolhido no prazo máximo de 7 (sete) dias corridos, a contar da data da aprovação do pagamento. Caso o pedido não seja retirado neste prazo, será automaticamente cancelado. Se houver o cancelamento do pedido, o cliente poderá optar entre receber um vale com o valor da compra, que para ser resgatado e utilizado bastará a apresentação do CPF em qualquer unidade, ou receber o estorno do valor pago de acordo com o meio de pagamento utilizado (estorno se cartão de crédito ou depósito em conta se realizado por Boleto Bancário), nos termos do item 4.5 da Política de Trocas e Devoluções. O horário de retirada do pedido será de acordo com o horário de funcionamento do ponto de retirada escolhido. Ao comparecer no local de retirada, o cliente deverá informar que a compra foi realizada através do serviço “Clique e Retire”. A entrega do pedido será realizada no local de retirada participante escolhido pelo cliente, sendo que será de exclusiva responsabilidade do cliente a retirada do produto na área de atendimento do local, o carregamento e o transporte até seu destino final. Para a retirada do pedido, o cliente deverá apresentar: Documento original com foto e o número do seu pedido. Para que outra pessoa (Terceiro) faça a retirada de mercadoria em nome do Cliente é preciso apresentar o documento de identidade original com foto e autorização de retirada de mercadoria devidamente preenchida (modelo de autorização) com a cópia do documento de identidade do titular da compra. Para retirada de pedidos de Pessoa Jurídica apresentar cópia autenticada do Contrato Social/Estatuto da empresa e documento original com foto do representante legal. Caso o pedido de Pessoa Jurídica seja retirado por terceiro, apresentar (além da cópia autenticada do contrato Social/ Estatuto e documento original com foto de quem está retirando) o termo de autorização assinado pelo representante legal da empresa. Confira aqui o modelo do termo de autorização. \n **10.4.** Sobre a troca ou cancelamento Caso ocorra o cancelamento do pedido, o cliente poderá optar por receber um vale com o valor da compra, que para ser resgatado e utilizado bastará a apresentação do CPF em uma das nossas unidades, ou receber o estorno do valor pago, de acordo com o meio de pagamento utilizado (seja ele Cartão de Crédito ou Boleto Bancário), nos termos do item 4.5 da Política de Trocas e Devoluções. Solicitações de cancelamento por arrependimento, nos termos do artigo 49 do Código de Defesa do Consumidor, deverão ser feitas através dos canais de atendimento ao consumidor, em até 7 (sete) dias corridos a contar da data da retirada. \n \n **11. Devolução por erro no cadastro** \n  A FastObra não se responsabiliza caso o pedido seja entregue no endereço incorreto por erro de cadastramento. Os dados cadastrais são de inteira responsabilidade do cliente. Caso haja algum problema na entrega dos produtos por erro no endereço cadastrado, o custo de reenvio dos produtos será de responsabilidade do cliente, inclusive do novo produto, na eventualidade do 1º endereço informado incorretamente não ser localizado. \n \n **12. Diversos** \n  Alterações do pedido. A FastObra não aceitará alterações do pedido (formas de pagamento, quantidades, local, data ou turno da entrega) após a finalização do processo de Compra no Site. Atrasos. Algumas situações excepcionais podem causar atrasos na entrega dos Produtos adquiridos, como a indicação de um endereço errado, incompleto ou inexistente ou a ocorrência de fatores naturais (chuvas, enchentes) ou humanos (greves, manifestações, acidentes), conhecidos como eventos de caso fortuito e força maior. Nestes casos, a FastObra fará o possível para manter o Cliente informado com relação ao problema que causou o atraso e para efetivar a entrega no menor prazo possível. \n Retenções. Caso os Produtos adquiridos sejam retidos por autoridades fiscais em decorrência de pendências do Cliente, a FastObra informará a situação imediatamente, ficando, no entanto, isenta do dever de entregar, uma vez que os Produtos só poderão ser liberados pela autoridade competente mediante o comparecimento do Cliente. Alertas. A FastObra poderá enviar e-mails ou mensagens SMS ao Cliente a fim de informar qualquer alteração no processo de entrega de seu pedido, como a saída dos produtos do centro de distribuição, o deslocamento pela cidade, o horário estimado de entrega, eventuais atrasos, entre outros.",
+          "blockClass": "mainContent"
+      }
+    } 
+  }
+  

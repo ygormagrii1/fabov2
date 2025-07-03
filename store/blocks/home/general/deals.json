@@ -1,0 +1,196 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#blocodeals1",
+      "flex-layout.col#blocodeals2",
+      "flex-layout.col#blocodeals3",
+      "flex-layout.col#blocodeals4"
+    ],
+    "props": { 
+      "blockClass": "deals"
+    }
+  },
+
+  "flex-layout.row#deals-mobile": {
+    "children": [
+      "slider-layout#deals"
+    ],
+    "props": { 
+      "blockClass": "deals",
+      "fullWidth": true  
+    } 
+  },
+
+  "responsive-layout.mobile#deals": {
+    "children": [
+      "slider-layout#deals"
+    ]   
+  },
+
+  "slider-layout#deals": { 
+    "children": [
+      "flex-layout.col#blocodeals1",
+      "flex-layout.col#blocodeals2",
+      "flex-layout.col#blocodeals3",
+      "flex-layout.col#blocodeals4" 
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1, 
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "deals", 
+      "showPaginationDots": "never",  
+      "usePagination": true,
+      "centerMode": "center", 
+      "centerModeSlidesGap:": 0
+    } 
+  },
+ 
+  "flex-layout.col#blocodeals1":{
+
+    "children":[
+      "image#deal1",
+      "flex-layout.col#deals1" 
+    ],
+    "props":{
+      "blockClass":"bloco-deals"
+    }
+
+  },
+
+  "flex-layout.col#deals1": {
+    "children": [
+      
+      "rich-text#deal1",
+      "rich-text#deal-content1"
+    ]
+  },
+
+  "image#deal1": {
+    "props": {
+      "src": "/arquivos/icon-frete-gratis.svg",
+      "maxHeight": "43px"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "Frete Grátis",
+      "blockClass": "deals"
+    }
+  },
+  "rich-text#deal-content1": {
+    "props": {
+      "text": "Em compras acima \n de R$199,90 (Consulte as regiões).",
+      "blockClass": "deals-content"
+    }
+  },
+  "flex-layout.col#blocodeals2":{
+    "children":[
+      "image#deal2",
+      "flex-layout.col#deals2"
+    ],
+    "props":{
+      "blockClass":"bloco-deals"
+    }
+  },
+
+  "flex-layout.col#deals2": {
+    "children": [
+      "rich-text#deal2",
+      "rich-text#deal-content2"
+    ]
+  },
+
+  "image#deal2": {
+    "props": {
+      "src": "/arquivos/icon-entrega-rapida.svg",
+      "maxHeight": "43px"
+    }
+  },
+
+  "rich-text#deal2": {
+    "props": {
+      "text": "Entrega Rápido",
+      "blockClass": "deals"
+    }
+  },
+  "rich-text#deal-content2": {
+    "props": {
+      "text": "Nossa entrega é segura,\n rápida e protege sua compra",
+      "blockClass": "deals-content"
+    }
+  },
+
+  "flex-layout.col#blocodeals3":{
+    "children":[
+      "image#deal3",
+      "flex-layout.col#deals3"
+    ],
+    "props":{
+      "blockClass":"bloco-deals"
+    }
+  },
+
+  "flex-layout.col#deals3": {
+    "children": [
+      "rich-text#deal3",
+      "rich-text#deal-content3"
+    ]
+  },
+  "rich-text#deal-content3": {
+    "props": {
+      "text": "No cartão de crédito com \n parcela mínima de R$50",
+      "blockClass": "deals-content"
+    }
+  },
+
+  "image#deal3": {
+    "props": {
+      "src": "/arquivos/icon-sem-juros-parcelado.svg",
+      "maxHeight": "43px"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "até 5X sem juros",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#blocodeals4":{
+    "children":[
+      "image#deal4",
+      "flex-layout.col#deals4"
+    ],
+    "props":{
+      "blockClass":"bloco-deals"
+    }
+  },
+  "flex-layout.col#deals4": {
+    "children": [
+      "rich-text#deal4",
+      "rich-text#deal-content4"
+    ]
+  },
+  "rich-text#deal-content4": { 
+    "props": {
+      "text": "(cupom não cumulativo)", 
+      "blockClass": "deals-content"
+    }
+  },
+  "image#deal4": {
+    "props": {
+      "src": "/arquivos/icon-primeira-compra.svg",
+      "maxHeight": "43px"
+    }
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "5% off na primeira compra",
+      "blockClass": "deals"
+    }
+  }
+}

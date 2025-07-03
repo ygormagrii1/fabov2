@@ -1,0 +1,59 @@
+.containerPixFlag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+
+  background-color: #F3F6F4;
+  font-family: 'Open Sans', sans-serif;
+  padding: 6px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 284px;
+  height: 33px;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.containerPixFlag svg {
+  width: 22px;
+  height: 22px;
+  fill: #199a64;
+}
+.containerPricePixFlag {
+  color: #199a64;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.containerPricePixFlag strong {
+  font-size: 12px;
+}
+
+.containerPricePixFlag p {
+  margin: 0;
+  font-size: 12px;
+  color: #5b5b5b;
+}
+
+
+@media(min-width: 768px){
+  .containerPricePixFlag strong {
+    font-size: 17px;
+  }
+
+  .containerPricePixFlag p {
+    font-size: 12px;
+  }
+
+  .containerPixFlag {
+    gap: 13px;
+    height: 33px;
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+}

@@ -1,0 +1,20 @@
+{
+
+    "responsive-layout.mobile#home": {
+        "children": [
+            "list-context.image-list#full-banner-home",
+            "flex-layout.row#deals-mobile", 
+            "flex-layout.row#newsletter-home",  
+            "flex-layout.row#shelf-01", 
+            "flex-layout.row#shelf-02",
+            "flex-layout.row#shelf-03",
+            "flex-layout.row#banner-departamentos",
+            "flex-layout.row#shelf-04",
+            "flex-layout.row#produtos-aplicados",  
+            "flex-layout.row#shelf-05", 
+            "flex-layout.row#obras-ambiente",
+            "flex-layout.row#slide-marcas"
+        ]    
+    } 
+    
+} 

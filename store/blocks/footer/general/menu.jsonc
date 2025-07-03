@@ -1,0 +1,1144 @@
+{
+  "vtex.menu@2.x:menu#marcas": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "marcas-footer" 
+    },
+    "children": [ 
+      "menu-item#bautech",
+      "menu-item#norton",
+      "menu-item#plastcor",
+      "menu-item#penetron", 
+      "menu-item#mbcc", 
+      "menu-item#itw", 
+      "menu-item#icobit",
+      "menu-item#dryko",
+      "menu-item#denver", 
+      "menu-item#viapol",  
+      "menu-item#tubolit",
+      "menu-item#portokoll",
+      "menu-item#quimicryl",
+      "menu-item#salvabras",
+      "menu-item#kanaflex", 
+      "menu-item#maccferri",
+      "menu-item#3m",
+      "menu-item#ciser"
+    ]
+  },
+  "menu-item#bautech": {
+    "props": {
+      "id": "menu-item-bautech",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bautech?_q=bautech&map=ft",
+        "noFollow": false,
+        "tagTitle": "bautech",
+        "text": "bautech"
+      }
+    }
+  },
+  "menu-item#norton": {
+    "props": {
+      "id": "menu-item-norton",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/norton?_q=norton&map=ft",
+        "noFollow": false,
+        "tagTitle": "norton",
+        "text": "norton"
+      }
+    }
+  },
+  "menu-item#plastcor": {
+    "props": {
+      "id": "menu-item-plastcor",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/plastcor?_q=plastcor&map=ft",
+        "noFollow": false,
+        "tagTitle": "plastcor",
+        "text": "plastcor"
+      }
+    }
+  },
+  "menu-item#penetron": {
+    "props": {
+      "id": "menu-item-penetron",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/penetron?_q=penetron&map=ft",
+        "noFollow": false,
+        "tagTitle": "penetron",
+        "text": "penetron"
+      }
+    }
+  },
+  "menu-item#mbcc": {
+    "props": {
+      "id": "menu-item-mbcc",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mbcc?_q=mbcc&map=ft",
+        "noFollow": false,
+        "tagTitle": "mbcc",
+        "text": "mbcc"
+      }
+    }
+  },
+  "menu-item#marluvas": {
+    "props": {
+      "id": "menu-item-marluvas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/itw?_q=itw&map=ft",
+        "noFollow": false,
+        "tagTitle": "marluvas",
+        "text": "marluvas"
+      }
+    }
+  },
+  "menu-item#itw": {
+    "props": {
+      "id": "menu-item-itw",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/itw?_q=itw&map=ft",
+        "noFollow": false,
+        "tagTitle": "itw",
+        "text": "itw"
+      }
+    }
+  },
+  "menu-item#icobit": {
+    "props": {
+      "id": "menu-item-icobit",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/icobit?_q=icobit&map=ft",
+        "noFollow": false,
+        "tagTitle": "icobit",
+        "text": "icobit"
+      }
+    }
+  },
+  "menu-item#dryko": {
+    "props": {
+      "id": "menu-item-dryko",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/dryko?_q=dryko&map=ft",
+        "noFollow": false,
+        "tagTitle": "dryko",
+        "text": "dryko"
+      }
+    }
+  },
+  "menu-item#denver": {
+    "props": {
+      "id": "menu-item-denver",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/denver?_q=denver&map=ft",
+        "noFollow": false,
+        "tagTitle": "denver",
+        "text": "denver"
+      }
+    }
+  },
+  "menu-item#ciser": {
+    "props": {
+      "id": "menu-item-ciser",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ciser?_q=ciser&map=ft",
+        "noFollow": false,
+        "tagTitle": "ciser",
+        "text": "ciser"
+      }
+    }
+  },
+  "menu-item#3m": {
+    "props": {
+      "id": "menu-item-3m",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/3m?_q=3m&map=ft",
+        "noFollow": false,
+        "tagTitle": "3m",
+        "text": "3m"
+      }
+    }
+  },
+  "menu-item#maccferri": {
+    "props": {
+      "id": "menu-item-maccferri",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/maccferri?_q=maccferri&map=ft",
+        "noFollow": false,
+        "tagTitle": "maccferri",
+        "text": "maccferri"
+      }
+    }
+  },
+  "menu-item#kanaflex": {
+    "props": {
+      "id": "menu-item-kanaflex",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/kanaflex?_q=kanaflex&map=ft",
+        "noFollow": false,
+        "tagTitle": "kanaflex",
+        "text": "kanaflex"
+      }
+    }
+  },
+  "menu-item#salvabras": {
+    "props": {
+      "id": "menu-item-salvabras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/salvabras?_q=salvabras&map=ft",
+        "noFollow": false,
+        "tagTitle": "salvabras",
+        "text": "salvabras"
+      }
+    }
+  },
+  "menu-item#quimicryl": {
+    "props": {
+      "id": "menu-item-quimicryl",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quimicryl?_q=quimicryl&map=ft",
+        "noFollow": false,
+        "tagTitle": "quimicryl",
+        "text": "quimicryl"
+      }
+    }
+  },
+  "menu-item#portokoll": {
+    "props": {
+      "id": "menu-item-portokoll",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/portokoll?_q=portokoll&map=ft",
+        "noFollow": false,
+        "tagTitle": "portokoll",
+        "text": "portokoll"
+      }
+    }
+  },
+  "menu-item#tubolit": {
+    "props": {
+      "id": "menu-item-tubolit",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tubolit?_q=tubolit&map=ft",
+        "noFollow": false,
+        "tagTitle": "tubolit",
+        "text": "tubolit"
+      }
+    }
+  },
+  "menu-item#viapol": {
+    "props": {
+      "id": "menu-item-viapol",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/viapol?_q=viapol&map=ft",
+        "noFollow": false,
+        "tagTitle": "viapol", 
+        "text": "viapol"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#termos": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "termos-footer" 
+    },
+    "children": [  
+      "menu-item#sika",
+      "menu-item#viaplus",
+      "menu-item#bianco",
+      "menu-item#vedacit",
+      "menu-item#tarucel",
+      "menu-item#argamassa",
+      "menu-item#cimento",
+      "menu-item#tela",
+      "menu-item#pisos",
+      "menu-item#sika-top",
+      "menu-item#sikafill",
+      "menu-item#neutrol",
+      "menu-item#papelao",
+      "menu-item#selantes",
+      "menu-item#baucryl",
+      "menu-item#asfalto",
+      "menu-item#manta-liquida",
+      "menu-item#manta",
+      "menu-item#vedalit",
+      "menu-item#impermeabilizante",
+      "menu-item#cimento-queimado",
+      "menu-item#graute",
+      "menu-item#fundacao",
+      "menu-item#geotextil",
+      "menu-item#desmoldante",
+      "menu-item#masterpur",
+      "menu-item#fita-crepe",
+      "menu-item#rejunte",
+      "menu-item#argamassas",
+      "menu-item#cobertura",
+      "menu-item#geocomposto",
+      "menu-item#brocha",
+      "menu-item#chapisco",
+      "menu-item#sikatop",
+      "menu-item#fibra",
+      "menu-item#Bianco",
+      "menu-item#mastique"
+    ]
+  },
+  "menu-item#sika": {
+    "props": {
+      "id": "menu-item-sika",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sika?_q=sika&map=ft",
+        "noFollow": false,
+        "tagTitle": "sika",
+        "text": "sika"
+      }
+    }
+  },
+  "menu-item#viaplus": {
+    "props": { 
+      "id": "menu-item-viaplus",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/viaplus?_q=viaplus&map=ft",
+        "noFollow": false,
+        "tagTitle": "viaplus",
+        "text": "viaplus"
+      }
+    }
+  },
+  "menu-item#bianco": {
+    "props": {
+      "id": "menu-item-bianco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bianco?_q=bianco&map=ft",
+        "noFollow": false,
+        "tagTitle": "bianco",
+        "text": "bianco"
+      }
+    }
+  },
+  "menu-item#vedacit": {
+    "props": {
+      "id": "menu-item-vedacit",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vedacit?_q=vedacit&map=ft",
+        "noFollow": false,
+        "tagTitle": "vedacit",
+        "text": "vedacit"
+      }
+    }
+  },
+  "menu-item#tarucel": {
+    "props": {
+      "id": "menu-item-tarucel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tarucel?_q=tarucel&map=ft",
+        "noFollow": false,
+        "tagTitle": "tarucel",
+        "text": "tarucel"
+      }
+    }
+  },
+  "menu-item#argamassa": {
+    "props": {
+      "id": "menu-item-argamassa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/argamassa?_q=argamassa&map=ft",
+        "noFollow": false,
+        "tagTitle": "argamassa",
+        "text": "argamassa"
+      }
+    }
+  },
+  "menu-item#cimento": {
+    "props": {
+      "id": "menu-item-cimento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cimento?_q=cimento&map=ft",
+        "noFollow": false,
+        "tagTitle": "cimento",
+        "text": "cimento"
+      }
+    }
+  },
+  "menu-item#tela": {
+    "props": {
+      "id": "menu-item-tela",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tela?_q=tela&map=ft",
+        "noFollow": false,
+        "tagTitle": "tela",
+        "text": "tela"
+      }
+    }
+  },
+  "menu-item#pisos": {
+    "props": {
+      "id": "menu-item-pisos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pisos?_q=pisos&map=ft",
+        "noFollow": false,
+        "tagTitle": "pisos",
+        "text": "pisos"
+      }
+    }
+  },
+  "menu-item#sika-top": {
+    "props": {
+      "id": "menu-item-sika-top",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sika-top?_q=sika-top&map=ft",
+        "noFollow": false,
+        "tagTitle": "sika top",
+        "text": "sika top"
+      }
+    }
+  },
+  "menu-item#sikafill": {
+    "props": {
+      "id": "menu-item-sikafill",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sikafill?_q=sikafill&map=ft",
+        "noFollow": false,
+        "tagTitle": "sikafill",
+        "text": "sikafill"
+      }
+    }
+  },
+  "menu-item#neutrol": {
+    "props": {
+      "id": "menu-item-neutrol",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/neutrol?_q=neutrol&map=ft",
+        "noFollow": false,
+        "tagTitle": "neutrol",
+        "text": "neutrol"
+      }
+    }
+  },
+  "menu-item#papelao": {
+    "props": {
+      "id": "menu-item-papelao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/papelao?_q=papelao&map=ft",
+        "noFollow": false,
+        "tagTitle": "papelao",
+        "text": "papelao"
+      }
+    }
+  },
+  "menu-item#selantes": {
+    "props": {
+      "id": "menu-item-selantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/selantes?_q=selantes&map=ft",
+        "noFollow": false,
+        "tagTitle": "selantes",
+        "text": "selantes"
+      }
+    }
+  },
+  "menu-item#baucryl": {
+    "props": {
+      "id": "menu-item-baucryl",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/baucryl?_q=baucryl&map=ft",
+        "noFollow": false,
+        "tagTitle": "baucryl",
+        "text": "baucryl"
+      }
+    }
+  },
+  "menu-item#asfalto": {
+    "props": {
+      "id": "menu-item-asfalto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/asfalto?_q=asfalto&map=ft",
+        "noFollow": false,
+        "tagTitle": "asfalto",
+        "text": "asfalto"
+      }
+    }
+  },
+
+  "menu-item#manta-liquida": {
+    "props": {
+      "id": "menu-item-manta-liquida",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/manta-liquida?_q=manta-liquida&map=ft",
+        "noFollow": false,
+        "tagTitle": "Manta liquida",
+        "text": "Manta liquida"
+      }
+    }
+  },
+
+  "menu-item#manta": {
+    "props": {
+      "id": "menu-item-manta",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/manta?_q=manta&map=ft",
+        "noFollow": false,
+        "tagTitle": "Manta",
+        "text": "Manta"
+      }
+    }
+  },
+
+  "menu-item#vedalit": {
+    "props": {
+      "id": "menu-item-vedalit",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vedalit?_q=vedalit&map=ft",
+        "noFollow": false,
+        "tagTitle": "vedalit",
+        "text": "vedalit"
+      }
+    }
+  },
+
+  "menu-item#impermeabilizante": {
+    "props": {
+      "id": "menu-item-impermeabilizantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/impermeabilizantes?_q=impermeabilizantes&map=ft",
+        "noFollow": false,
+        "tagTitle": "impermeabilizantes",
+        "text": "impermeabilizantes"
+      }
+    }
+  },
+
+  "menu-item#cimento-queimado": {
+    "props": {
+      "id": "menu-item-cimento-queimado",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cimento-queimado?_q=cimento-queimado&map=ft",
+        "noFollow": false,
+        "tagTitle": "Cimento Queimado",
+        "text": "Cimento Queimado"
+      }
+    }
+  },
+
+  "menu-item#graute": {
+    "props": {
+      "id": "menu-item-graute",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/graute?_q=graute&map=ft",
+        "noFollow": false,
+        "tagTitle": "graute",
+        "text": "graute"
+      }
+    }
+  },
+
+  "menu-item#fundacao": {
+    "props": {
+      "id": "menu-item-fundacao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/fundacao?_q=fundacao&map=ft",
+        "noFollow": false,
+        "tagTitle": "fundacao",
+        "text": "fundacao"
+      }
+    }
+  },
+  
+  "menu-item#geotextil": {
+    "props": {
+      "id": "menu-item-geotextil",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/geotextil?_q=geotextil&map=ft",
+        "noFollow": false,
+        "tagTitle": "geotextil",
+        "text": "geotextil"
+      }
+    }
+  },
+
+  "menu-item#desmoldante": {
+    "props": {
+      "id": "menu-item-desmoldante",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/desmoldante?_q=desmoldante&map=ft",
+        "noFollow": false,
+        "tagTitle": "desmoldante",
+        "text": "desmoldante"
+      }
+    }
+  },
+
+  "menu-item#masterpur": {
+    "props": {
+      "id": "menu-item-masterpur",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/masterpur?_q=masterpur&map=ft",
+        "noFollow": false,
+        "tagTitle": "masterpur",
+        "text": "masterpur"
+      }
+    }
+  },
+
+  "menu-item#fita-crepe": {
+    "props": {
+      "id": "menu-item-fita-crepe",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/fita-crepe?_q=fita-crepe&map=ft",
+        "noFollow": false,
+        "tagTitle": "Fita Crepe",
+        "text": "Fita Crepe"
+      }
+    }
+  },
+
+  "menu-item#rejunte": {
+    "props": {
+      "id": "menu-item-rejunte",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/rejunte?_q=rejunte&map=ft",
+        "noFollow": false,
+        "tagTitle": "rejunte",
+        "text": "rejunte"
+      }
+    }
+  },
+
+  "menu-item#argamassas": {
+    "props": {
+      "id": "menu-item-argamassas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/argamassas?_q=argamassas&map=ft",
+        "noFollow": false,
+        "tagTitle": "argamassas",
+        "text": "argamassas"
+      }
+    }
+  },
+
+  "menu-item#cobertura": {
+    "props": {
+      "id": "menu-item-cobertura",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cobertura?_q=cobertura&map=ft",
+        "noFollow": false,
+        "tagTitle": "cobertura",
+        "text": "cobertura"
+      }
+    }
+  },
+
+  "menu-item#geocomposto": {
+    "props": {
+      "id": "menu-item-geocomposto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/geocomposto?_q=geocomposto&map=ft",
+        "noFollow": false,
+        "tagTitle": "geocomposto",
+        "text": "geocomposto"
+      }
+    }
+  },
+
+  "menu-item#brocha": {
+    "props": {
+      "id": "menu-item-brocha",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/brocha?_q=brocha&map=ft",
+        "noFollow": false,
+        "tagTitle": "brocha",
+        "text": "brocha"
+      }
+    }
+  },
+
+  "menu-item#sikatop": {
+    "props": {
+      "id": "menu-item-sikatop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sikatop?_q=sikatop&map=ft",
+        "noFollow": false,
+        "tagTitle": "sikatop",
+        "text": "sikatop"
+      }
+    }
+  },
+
+  "menu-item#chapisco": {
+    "props": {
+      "id": "menu-item-chapisco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/chapisco?_q=chapisco&map=ft",
+        "noFollow": false,
+        "tagTitle": "chapisco",
+        "text": "chapisco"
+      }
+    }
+  },
+
+  "menu-item#fibra": {
+    "props": {
+      "id": "menu-item-fibra",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/fibra?_q=fibra&map=ft",
+        "noFollow": false,
+        "tagTitle": "fibra",
+        "text": "fibra"
+      }
+    }
+  },
+
+  "menu-item#Bianco": {
+    "props": {
+      "id": "menu-item-Bianco",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Bianco?_q=Bianco&map=ft",
+        "noFollow": false,
+        "tagTitle": "Bianco",
+        "text": "Bianco"
+      }
+    }
+  },
+
+  "menu-item#mastique": {
+    "props": {
+      "id": "menu-item-mastique",
+      "type": "custom", 
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mastiquel?_q=mastiquel&map=ft",
+        "noFollow": false,
+        "tagTitle": "mastique",
+        "text": "mastique" 
+      }
+    }
+  },
+
+  // MENU CONTATO
+
+  "vtex.menu@2.x:menu#contato": {
+    "props": { 
+      "blockClass": ["contato", "footer-menu"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": { 
+            "type": "internal",
+            "href": "mailto:sac@fastobra.com.br", 
+            "noFollow": false,
+            "tagTitle": "sac@fastobra.com.br",
+            "text": "sac@fastobra.com.br"
+          }
+        },
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "tel:+551131064660",
+            "noFollow": false,
+            "tagTitle": "Telefone: (11) 3103 4660",
+            "text": "Telefone: (11) 3103 4660"
+          }
+        },
+        { 
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://api.whatsapp.com/send?phone=5511940168899",
+            "noFollow": false,
+            "tagTitle": "Whatsapp: (11) 9-4016-8899",
+            "text": "Whatsapp: (11) 9-4016-8899"
+          }
+        }
+      ]
+    }
+  },
+
+  // MENU ATENDIMENTO
+
+  "vtex.menu@2.x:menu#atendimento": {
+    "props": { 
+      "blockClass": ["atendimento", "footer-menu"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": { 
+            "noFollow": false,
+            "tagTitle": "Segunda à Quinta - 8h às 18h",
+            "text": "Segunda à Quinta - 8h às 18h"
+          }
+        },
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "noFollow": false,
+            "tagTitle": "Sexta - 8h às 17h",
+            "text": "Sexta - 8h às 17h"
+          }
+        }
+      ]
+    }
+  },
+
+
+  // MENU INSTITUCIONAL
+
+  "vtex.menu@2.x:menu#institucional": {
+    "props": { 
+      "blockClass": ["institucional", "footer-menu"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": { 
+            "noFollow": false,
+            "tagTitle": "Quem Somos",
+            "text": "Quem Somos",
+            "type": "internal",
+            "href": "/institucional/nossa-historia"
+          }
+        },
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": { 
+            "noFollow": false,
+            "tagTitle": "Trabalhe conosco",
+            "text": "Trabalhe conosco",            
+            "type": "internal", 
+            "href": "/institucional/trabalhe-conosco"
+          }
+        },
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": { 
+            "noFollow": false,
+            "tagTitle": "Políticas",
+            "text": "Políticas",            
+            "type": "internal",
+            "href": "/institucional/politicas"
+          }
+        },
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "noFollow": false,
+            "tagTitle": "Nossas Lojas",
+            "text": "Nossas Lojas",            
+            "type": "internal",
+            "href": "/institucional/nossas-lojas"
+          }
+        }
+      ]
+    }
+  },
+
+  // MENU AJUDA
+
+  "vtex.menu@2.x:menu#ajuda": {
+    "props": {  
+      "blockClass": ["ajuda", "footer-menu"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null, 
+          "highlight": false,
+          "itemProps": {  
+            "noFollow": false,
+            "tagTitle": "Frete e Entrega",
+            "text": "Frete e Entrega",            
+            "type": "internal",
+            "href": "/institucional/frete-entrega"
+          }
+        },
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": { 
+            "noFollow": false,
+            "tagTitle": "Devoluções",
+            "text": "Devoluções",            
+            "type": "internal",
+            "href": "/institucional/devolucoes" 
+          }
+        },
+        {
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": { 
+            "noFollow": false,
+            "tagTitle": "Minha Conta",
+            "text": "Minha Conta",
+            "href": "/account#/profile" 
+          }
+        },
+        { 
+          "id": "footerItem",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "noFollow": false,
+            "tagTitle": "Meus Pedidos",
+            "text": "Meus Pedidos",
+            "href": "/account#/orders" 
+          }
+        }
+      ] 
+    }
+  } 
+}

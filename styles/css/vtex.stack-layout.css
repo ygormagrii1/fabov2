@@ -1,0 +1,30 @@
+.stackItem--product {
+  width: 100%;
+} 
+
+.stackItem--quickview {
+  right: 0;
+  top: 0;
+  left: auto;
+}
+
+.stackContainer--product{
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  border-radius: 3px; 
+}
+
+/*LOGIN*/
+
+:global(.vtex-login-2-x-label) {
+  text-transform: capitalize;
+  color: #363631;
+}
+
+
+@media(max-width: 768px){
+  .stackContainer--product{
+    max-width: 340px; 
+    margin: auto;
+  }
+}

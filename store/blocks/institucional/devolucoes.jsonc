@@ -1,0 +1,115 @@
+{
+    "store.custom#devolucoes": {
+      "blocks": [
+        "responsive-layout.desktop#de-desk",
+        "responsive-layout.phone#de-mob"
+      ]
+    },
+    "responsive-layout.desktop#de-desk": {
+      "children": ["flex-layout.row#de-content-desktop"]
+    },
+    "responsive-layout.phone#de-mob": {
+      "children": ["flex-layout.row#de-content-mobile"]
+    },
+
+
+    "flex-layout.row#de-content-desktop":{
+      "children": [
+        "flex-layout.col#de-menu-lateral",
+        "flex-layout.col#de-text-page"
+      ],
+      "props": {
+        "paddingTop": "8",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    },
+    "flex-layout.row#de-content-mobile":{
+      "children": [
+        "flex-layout.col#de-text-page",
+        "flex-layout.row#de-lateral-menu-mobile"
+      ]
+    },
+    "flex-layout.row#de-lateral-menu-mobile":{
+      "children": [
+        "flex-layout.col#de-menu1-mobile",
+        "flex-layout.col#de-menu2-mobile"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "paddingTop": "5",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    },
+
+
+    "flex-layout.col#de-menu-lateral": {
+      "title": "Menu Lateral Desktop",
+      "children": [
+        "rich-text#de-items-menu1-lateral",
+        "rich-text#de-items-menu2-lateral"
+      ],
+      "props": {
+        "verticalAlign": "top",
+        "width": "18%"
+      }
+    },
+    "flex-layout.col#de-menu1-mobile": {
+      "title": "Menu Lateral Mobile",
+      "children": [
+        "rich-text#de-items-menu1-lateral"
+      ],
+      "props": {
+        "verticalAlign": "top",
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#de-menu2-mobile": {
+      "children": [
+        "rich-text#de-items-menu2-lateral"
+      ],
+      "props": {
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#de-text-page": {
+      "title": "Conteúdo Principal",
+      "children": [
+        "rich-text#de-txt-page-title",
+        "rich-text#de-txt-page"
+      ],
+      "props": {
+        "verticalAlign": "top",
+        "width": "78%"
+      }
+    },
+    "rich-text#de-items-menu1-lateral": {
+      "title": "Coluna 1",
+      "props": {
+        "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#de-items-menu2-lateral": {
+      "title": "Coluna 2",
+      "props": {
+        "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#de-txt-page-title": {
+      "title": "Conteúdo Principal - Título",
+      "props": {
+        "text": "# **Devoluções** #" ,
+        "blockClass": "mainTitle"
+      }
+    },
+    "rich-text#de-txt-page": {
+      "title": "Conteúdo Principal - Texto",
+      "props": {
+          "text": "## Pré-requisitos para Trocas e Devoluções ## \n **Só serão aceitas:**\n • Em até 30 dias corridos, contados do dia da entrega/recebimento do produto. \n • O produto deve estar completo, com a embalagem original, os manuais de instrução, certificados de garantia e acessórios. \n • O produto deve estar acompanhado da Nota Fiscal ou cupom fiscal. \n • Exceto para trocas por desistência ou arrependimento, que só serão aceitas em até 7 dias úteis a partir da data de recebimento. \n \n **Não serão aceitos:** \n • Produtos que tenham sido usados (exceto para os casos de vício ou defeito técnico ou de fabricação, constatado após utilização). \n • Produtos adquiridos em saldo, sob medida e/ou personalizados. \n \n ## Como solicitar Trocas e Devoluções ## \n Você pode escolher um dos canais de atendimento abaixo: \n \n **Pelo site:** Preencher o Formulário de Atendimento. \n \n **Pelo telefone:** CAF • Central de Atendimento FastObra. \n Telefones: 11 3103 4660 \n De segunda a quinta das 8h às 18h e sexta das 8h às 17h. \n \n **Nas nossas unidades:** Encontre a FastObra mais próxima de você [**clicando aqui**](/institucional/nossas-lojas) \n \n ## Trocas e Devoluções por vícios ou defeitos ## \n  \n **Em até 30 dias:** \n • Troca por produto idêntico (de mesma marca, linha, modelo e versão) ou outro da mesma espécie ou; \n • Emissão de Vale Compras no valor do produto para utilização em qualquer loja. \n  \n **Após 30 dias:** \n • Procure a assistência técnica do fabricante do produto. \n *Período contado do dia da entrega/recebimento do produto. \n  \n **Devolução de valores pagos** \n  \n A devolução de valores pagos só será realizada após devolução do produto para a FastObra. \n **Pagamentos com cartão de crédito:** Os prazos de estorno dos valores dependem exclusivamente da administradora de cartão de crédito e podem ocorrer em até 2 (duas) faturas posteriores. \n **Pagamentos com boleto bancário ou feitos em dinheiro (espécie) nas lojas:** A devolução será efetuada por meio de depósito bancário, em até 10 (dez) dias úteis, a contar do recebimento do produto e das informações necessárias. O CPF do titular da conta para devolução deverá ser o mesmo CPF do titular da compra. \n Para trocas e devoluções de compras com boleto faturado para Pessoa Jurídica, por favor, entre em contato com nosso Televendas. \n \n Esperamos que essas informações tenham ajudado você! Em caso de dúvidas, [**Fale Conosco**](/institucional/contato).",
+          "blockClass": "mainContent"
+      }
+    }
+  }

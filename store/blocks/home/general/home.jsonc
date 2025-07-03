@@ -1,0 +1,1116 @@
+{
+
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop#home", 
+      "responsive-layout.mobile#home"
+    ] 
+  }, 
+
+  // Configuração global da Vitrine slider da home
+  "slider-layout#slider-products": {
+    "title": "Slider Vitrine",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 1,
+        "phone": 1
+      }, 
+      "infinite": true,
+      "fullWidth": true,  
+      "blockClass": ["padrao", "shelf", "carousel"], 
+      "showPaginationDots": "desktopOnly", 
+      "showNavigationArrows": "desktopOnly",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "center",
+        "phone": "center"   
+      }, 
+      "centerModeSlidesGap": 16 
+    } 
+  },
+
+  // FULL BANNER 
+
+  "list-context.image-list#full-banner-home": {
+    "children": ["slider-layout#full-banner-home"],
+    "props": {
+      "blockClass": "banner-images-home",
+      "height": 570,
+      "preload": true,
+      "images": [ 
+        {
+          "image": "/arquivos/ids/163059/04-Banner-Full-Pré-Black-Friday-Desk.jpg?v=638337767991630000", 
+          "mobileImage": "/arquivos/ids/163060/04-Banner-Full-Pré-Black-Friday-Mobile.jpg?v=638337768514600000",
+          "link": {
+            "attributeTitle": "Ofertas",
+            "url": "/301?map=productClusterIds"
+          }
+        },
+        {
+          "image": "/arquivos/ids/163018/01-Banner-Full-Bianco-Desk.jpg?v=638318794661230000",
+          "mobileImage": "/arquivos/ids/163019/01-Banner-Full-Bianco-Mobile.jpg?v=638318795620330000",
+          "link": {
+            "attributeTitle": "Bianco",
+            "url": "/bianco?_q=Bianco&map=ft"
+          }
+        }, 
+        {
+          "image": "/arquivos/ids/163020/02-Banner-Full-Impermeabilizantes-Desk.jpg?v=638318796600500000",
+          "mobileImage": "/arquivos/ids/163021/02-Banner-Full-Impermeabilizantes-Mobile.jpg?v=638318796968530000",
+          "link": {
+            "attributeTitle": "Viaplus",
+            "url": "/viaplus?_q=Viaplus&map=ft"
+          }
+        },
+        {
+          "image": "/arquivos/ids/163022/03-Banner-Full-Manta-Asfáltica-Desk.jpg?v=638318797624430000",
+          "mobileImage": "/arquivos/ids/163023/03-Banner-Full-Manta-Asfáltica-Mobile.jpg?v=638318798199000000",
+          "link": {
+            "attributeTitle": "Manta",
+            "url": "/153?map=productClusterIds"
+          }
+        } 
+      ]
+    }
+  },
+   
+
+  "slider-layout#full-banner-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1, 
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["carousel", "fullbanner"],
+      "showPaginationDots": "never"
+    }
+  },
+
+  // NEWSLETTER
+
+  "flex-layout.row#newsletter-home": {
+    "title": "Bloco newsletrer home",
+    "props": { 
+      "blockClass": "newsletter-home",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#newsletter-home-left",
+      "flex-layout.col#newsletter-home-rigth"
+    ]
+  },
+
+  "flex-layout.col#newsletter-home-left":{
+    "children": [ "rich-text#newsletter-home-title"],
+    "props": { 
+      "width": "35%"
+    }
+  },  
+
+  "rich-text#newsletter-home-title": {   
+    "props": {
+      "text": "## Quer ganhar **5% OFF** \n ## na **primeira compra?** \n É só fazer o seu cadastro na FastObra!", 
+      "blockClass": "newsletter-home",
+      "verticalAlign": "middle" 
+    }    
+  }, 
+
+  "flex-layout.col#newsletter-home-rigth":{
+    "children": ["newsletter-home"],
+    "props": {   
+      "verticalAlign": "middle"
+    }
+  },
+
+ 
+  // BANERS DEPARTAMENTOS 
+
+  "flex-layout.row#banner-departamentos": {
+    "title": "Bloco departamentos",
+    "props": { 
+      "blockClass": "banner-departamentos", 
+      "marginBottom": 9, 
+      "marginTop": 9 
+    },
+    "children": ["flex-layout.col#banner-departamentos"]
+  },
+
+  "flex-layout.col#banner-departamentos": { 
+    "title": "Bloco departamentos", 
+    "children": [ 
+      "rich-text#shelf-destaque-banner",
+      "responsive-layout.desktop#banner-departamentos",
+      "responsive-layout.mobile#banner-departamentos"
+    ] 
+  },
+
+  "responsive-layout.desktop#banner-departamentos": {
+    "children": [
+      "flex-layout.col#grid-departamentos"
+    ]   
+  },
+
+  "responsive-layout.mobile#banner-departamentos": {
+    "children": [
+      "slider-layout#banner-departamentos"
+    ]   
+  },
+
+  "slider-layout#banner-departamentos": {
+    "children": [
+      "image#grid-departamentos-01",
+      "image#grid-departamentos-02",
+      "image#grid-departamentos-03",
+      "image#grid-departamentos-04",
+      "image#grid-departamentos-05",
+      "image#grid-departamentos-06"  
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1, 
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "blockClass": "departamentos",
+      "showPaginationDots": "never", 
+      "usePagination": false,
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap:": 2 
+    } 
+  },
+
+  "rich-text#shelf-destaque-banner": { 
+    "title": "Titulo departamentos",
+    "props": {
+      "text": "Busca por Departamento", 
+      "blockClass": "shelfTitle" 
+    }
+  },
+
+  "flex-layout.col#grid-departamentos":{
+    "children": [ 
+      "image#grid-departamentos-01",
+      "image#grid-departamentos-02",
+      "image#grid-departamentos-03",
+      "image#grid-departamentos-04",
+      "image#grid-departamentos-05",
+      "image#grid-departamentos-06" 
+    ],  
+    "props": { 
+      "blockClass": "grid-departamentos"
+    }
+  },
+
+  "image#grid-departamentos-01": { 
+    "props": {
+      "src": "/arquivos/banner-middle-01.png", 
+      "blockClass": "grid-departamentos",
+      "link": { 
+        "url": "/drenagem-e-fundacao",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - departamentos"
+  },
+
+  "image#grid-departamentos-02": { 
+    "props": {
+      "src": "/arquivos/fastobra_banner_secundario_2.png", 
+      "blockClass": "grid-departamentos",
+      "link": { 
+        "url": "/impermeabilizacao",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - departamentos"
+  },
+
+  "image#grid-departamentos-03": { 
+    "props": {
+      "src": "/arquivos/fastobra_banner_secundario_3.png", 
+      "blockClass": "grid-departamentos",
+      "link": { 
+        "url": "/estrutura",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - departamentos"
+  },
+
+  "image#grid-departamentos-04": { 
+    "props": {
+      "src": "/arquivos/fastobra_banner_secundario_4.png", 
+      "blockClass": "grid-departamentos",
+      "link": { 
+        "url": "/argamassas-de-assentamento",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - departamentos"
+  },
+
+  "image#grid-departamentos-05": { 
+    "props": {
+      "src": "/arquivos/fastobra_banner_secundario_5.png", 
+      "blockClass": "grid-departamentos",
+      "link": { 
+        "url": "/pintura-e-protecao",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - departamentos"
+  },
+ 
+  "image#grid-departamentos-06": { 
+    "props": {
+      "src": "/arquivos/fastobra_banner_secundario_6.png", 
+      "blockClass": "grid-departamentos",
+      "link": { 
+        "url": "/epis-e-seguranca", 
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - departamentos"
+  },
+
+  // OBRAS POR AMBIENTE 
+
+  "flex-layout.row#obras-ambiente": { 
+    "title": "Bloco obras por ambiente",
+    "props": { 
+      "blockClass": "obras-ambiente", 
+      "marginBottom": 9,  
+      "marginTop": 9   
+    },
+    "children": ["flex-layout.col#obras-ambiente"]
+  },
+  
+  "flex-layout.col#obras-ambiente": { 
+    "title": "Bloco obras por ambiente",  
+    "children": [ 
+      "rich-text#shelf-obras-ambiente-title",
+      "rich-text#shelf-obras-ambiente", 
+      "flex-layout.col#grid-obras-ambiente"
+    ]  
+  }, 
+
+  "flex-layout.col#grid-obras-ambiente": { 
+    "children": [ 
+      "image#obras-ambiente-01",
+      "image#obras-ambiente-02",
+      "image#obras-ambiente-03", 
+      "image#obras-ambiente-04" 
+    ],
+    "props": {
+      "blockClass": "grid-obras-ambiente" 
+    } 
+  }, 
+
+  "image#obras-ambiente-01": { 
+    "props": {
+      "src": "/arquivos/cozinhas%20e%20banheiros%20banner.jpg", 
+      "blockClass": "grid-obras-ambiente",
+      "link": { 
+        "url": "/168?map=productClusterIds",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - Obras ambiente"
+  },
+
+  "image#obras-ambiente-02": { 
+    "props": {
+      "src": "/arquivos/lajes%20e%20coberturas%20banner.jpg", 
+      "blockClass": "grid-obras-ambiente",
+      "link": { 
+        "url": "/170?map=productClusterIds",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - Obras ambiente"
+  },
+
+  "image#obras-ambiente-03": { 
+    "props": {
+      "src": "/arquivos/piscinas%20banner.jpg", 
+      "blockClass": "grid-obras-ambiente",
+      "link": { 
+        "url": "/169?map=productClusterIds",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - Obras ambiente"
+  },
+
+  "image#obras-ambiente-04": { 
+    "props": {
+      "src": "/arquivos/fundação%20banner.jpg", 
+      "blockClass": "grid-obras-ambiente", 
+      "link": { 
+        "url": "/171?map=productClusterIds",
+        "attributeTitle": "",    
+        "newTab": false   
+      }
+    }, 
+    "title": "Imagem - Obras ambiente"
+  },
+ 
+  "rich-text#shelf-obras-ambiente-title": { 
+    "title": "Titulo obras por ambiente",
+    "props": {
+      "text": "Obras por Ambiente", 
+      "blockClass": ["obras-ambiente", "shelfTitle", "custom"]
+    }  
+  }, 
+
+  "rich-text#shelf-obras-ambiente": {   
+    "props": {
+      "text": "Compre produtos já pensando em sua aplicação dependendo do tipo de obra!", 
+      "blockClass": ["obras-ambiente", "conteudo"]
+    } 
+  },    
+ 
+
+  // SLIDE MARCAS 
+
+  "flex-layout.row#slide-marcas": { 
+    "title": "Bloco marcas", 
+    "props": { 
+      "blockClass": "slide-marcas", 
+      "marginBottom": 9,  
+      "marginTop": 9 
+    },
+    "children": ["flex-layout.col#slide-marcas"]
+  },
+
+  "flex-layout.col#slide-marcas": { 
+    "title": "Bloco marcas", 
+    "children": [ 
+      "rich-text#shelf-slide-marcas",
+      "list-context.image-list#slide-marcas" 
+    ] 
+  },
+
+  "rich-text#shelf-slide-marcas": { 
+    "title": "Titulo departamentos",
+    "props": {
+      "text": "Compre por marca", 
+      "blockClass": ["shelfTitle", "custom"] 
+    }
+  },
+
+  "list-context.image-list#slide-marcas": {
+    "children": ["slider-layout#slide-marcas"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "/arquivos/Sika%20Logo%20(2).png",
+          "mobileImage": "/arquivos/Sika%20Logo%20(2).png",
+          "link": {
+            "url": "/sika"  
+          }          
+        }, 
+        {
+          "image": "/arquivos/Vedacit%20Pro%20logo.png",
+          "mobileImage": "/arquivos/Vedacit%20Pro%20logo.png",
+          "link": {
+            "url": "/vedacit"  
+          } 
+        },
+        {
+          "image": "/arquivos/Viapol%20logo.png",
+          "mobileImage": "/arquivos/Viapol%20logo.png",
+          "link": {
+            "url": "/viapol"  
+          } 
+        },
+        {
+          "image": "/arquivos/Weber%20Quartzolit%20Logo.png",
+          "mobileImage": "/arquivos/Weber%20Quartzolit%20Logo.png",
+          "link": {
+            "url": "/weber-quartzolit"  
+          } 
+        },
+        {
+          "image": "/arquivos/Tytan%20Logo.png",
+          "mobileImage": "/arquivos/Tytan%20Logo.png",
+          "link": {
+            "url": "/tytan"  
+          } 
+        },
+        {
+          "image": "/arquivos/MC-Bauchimie%20Logo.png",
+          "mobileImage": "/arquivos/MC-Bauchimie%20Logo.png",
+          "link": {
+            "url": "/mb-bauchimie"  
+          } 
+        },
+        {
+          "image": "/arquivos/tubolit.jpg",
+          "mobileImage": "/arquivos/tubolit.jpg",
+          "link": {
+            "url": "/tubolit"  
+          } 
+        },
+        {
+          "image": "/arquivos/Portokoll%20Logo.png",
+          "mobileImage": "/arquivos/Portokoll%20Logo.png",
+          "link": {
+            "url": "/portokoll"  
+          } 
+        },
+        {
+          "image": "/arquivos/Quimicryl%20Logo.png",
+          "mobileImage": "/arquivos/Quimicryl%20Logo.png",
+          "link": {
+            "url": "/quimicryl"  
+          } 
+        },
+        {
+          "image": "/arquivos/salvabras.jpg",
+          "mobileImage": "/arquivos/salvabras.jpg",
+          "link": {
+            "url": "/salvabras"  
+          } 
+        },
+        {
+          "image": "/arquivos/Kanaflex%20Logo.png",
+          "mobileImage": "/arquivos/Kanaflex%20Logo.png",
+          "link": {
+            "url": "/kanaflex"  
+          } 
+        },
+        {
+          "image": "/arquivos/Maccaferri%20Logo.png",
+          "mobileImage": "/arquivos/Maccaferri%20Logo.png",
+          "link": {
+            "url": "/maccaferri"  
+          }
+        },
+        {
+          "image": "/arquivos/3m%20Logo.png",
+          "mobileImage": "/arquivos/3m%20Logo.png",
+          "link": {
+            "url": "/3m"  
+          }
+        },
+        {
+          "image": "/arquivos/Ciser%20Logo.png",
+          "mobileImage": "/arquivos/Ciser%20Logo.png",
+          "link": {
+            "url": "/ciser"  
+          }
+        },
+        {
+          "image": "/arquivos/Denver%20Logo.png",
+          "mobileImage": "/arquivos/Denver%20Logo.png",
+          "link": {
+            "url": "/denver"  
+          }
+        },
+        {
+          "image": "/arquivos/Dryko%20Logo.png",
+          "mobileImage": "/arquivos/Dryko%20Logo.png",
+          "link": {
+            "url": "/dryko"  
+          }
+        },
+        {
+          "image": "/arquivos/Icobit%20Logo.png",
+          "mobileImage": "/arquivos/Icobit%20Logo.png",
+          "link": {
+            "url": "/icobit"  
+          }
+        },
+        {
+          "image": "/arquivos/ITW%20Logo.png",
+          "mobileImage": "/arquivos/ITW%20Logo.png",
+          "link": {
+            "url": "/itw"  
+          }
+        },
+        {
+          "image": "/arquivos/marluvas.jpg",
+          "mobileImage": "/arquivos/marluvas.jpg",
+          "link": {
+            "url": "/marluvas"  
+          } 
+        },
+        {
+          "image": "/arquivos/MBCC%201.jpg",
+          "mobileImage": "/arquivos/MBCC%201.jpg",
+          "link": {
+            "url": "/mbcc"  
+          } 
+        },
+        {
+          "image": "/arquivos/Penetron%20logo.png",
+          "mobileImage": "/arquivos/Penetron%20logo.png",
+          "link": { 
+            "url": "/penetron"   
+          } 
+        }
+      ]
+    }
+  },
+
+  "slider-layout#slide-marcas": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5, 
+        "tablet": 3, 
+        "phone": 3
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",  
+      "blockClass": ["carousel", "padrao", "marcas"],
+      "showPaginationDots": "never" 
+    }
+  },
+
+  // VIitrine produtos 01
+    
+  "flex-layout.row#shelf-01": {
+    "title": "01 - Vitrine",
+    "props": { 
+      "blockClass": ["vitrine-produto", "full"], 
+      "marginBottom": 7, 
+      "marginTop": 2 
+    },
+    "children": ["flex-layout.col#shelf-01"]
+  }, 
+ 
+  "flex-layout.col#shelf-01": { 
+    "title": "01 - Vitrine",
+    "props": { 
+      "blockClass": "vitrine-produto"
+    },
+    "children": [ 
+      "rich-text#shelf-title-01",
+      "list-context.product-list#vitrine-01"
+    ] 
+  },
+
+  "rich-text#shelf-title-01": {
+    "title": "01 - Titulo Vitrine",
+    "props": {
+      "text": "## OS MELHORES IMPERMEABILIZANTES",   
+      "blockClass": "shelfTitle" 
+    }
+  },
+  
+  "list-context.product-list#vitrine-01": { 
+    "title": "01 - Vitrine",    
+    "blocks": ["product-summary.shelf#vitrine"], 
+    "children": ["slider-layout#slider-products"],
+    "props": { 
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  // VIitrine produtos 02
+    
+  "flex-layout.row#shelf-02": {
+    "title": "02 - Vitrine",
+    "props": { 
+      "blockClass": ["vitrine-produto", "full"], 
+      "marginBottom": 7, 
+      "marginTop": 9
+    },
+    "children": ["flex-layout.col#shelf-02"]
+  }, 
+ 
+  "flex-layout.col#shelf-02": { 
+    "title": "02 - Vitrine",
+    "props": { 
+      "blockClass": "vitrine-produto"
+    },
+    "children": [ 
+      "rich-text#shelf-title-02",
+      "list-context.product-list#vitrine-02"
+    ] 
+  },
+
+  "rich-text#shelf-title-02": {
+    "title": "02 - Titulo Vitrine",
+    "props": {
+      "text": "## O QUE OUTROS CLIENTES ESTÃO VENDO",   
+      "blockClass": "shelfTitle" 
+    }
+  },
+  
+  "list-context.product-list#vitrine-02": { 
+    "title": "02 - Vitrine",    
+    "blocks": ["product-summary.shelf#vitrine"], 
+    "children": ["slider-layout#slider-products"],
+    "props": { 
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  // VIitrine produtos 03
+    
+  "flex-layout.row#shelf-03": {
+    "title": "03 - Vitrine",
+    "props": { 
+      "blockClass": ["vitrine-produto", "full"], 
+      "marginBottom": 7, 
+      "marginTop": 9
+    },
+    "children": ["flex-layout.col#shelf-03"]
+  }, 
+ 
+  "flex-layout.col#shelf-03": { 
+    "title": "03 - Vitrine",
+    "props": { 
+      "blockClass": "vitrine-produto"
+    },
+    "children": [ 
+      "rich-text#shelf-title-03",
+      "list-context.product-list#vitrine-03"
+    ] 
+  },
+
+  "rich-text#shelf-title-03": {
+    "title": "03 - Titulo Vitrine",
+    "props": {
+      "text": "## MAIS VISTOS",   
+      "blockClass": "shelfTitle" 
+    }
+  },
+  
+  "list-context.product-list#vitrine-03": { 
+    "title": "03 - Vitrine",    
+    "blocks": ["product-summary.shelf#vitrine"], 
+    "children": ["slider-layout#slider-products"],
+    "props": { 
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  // VIitrine produtos 04
+    
+  "flex-layout.row#shelf-04": {
+    "title": "04 - Vitrine",
+    "props": { 
+      "blockClass": ["vitrine-produto", "full"], 
+      "marginBottom": 7, 
+      "marginTop": 9
+    },
+    "children": ["flex-layout.col#shelf-04"]
+  }, 
+ 
+  "flex-layout.col#shelf-04": { 
+    "title": "04 - Vitrine",
+    "props": { 
+      "blockClass": "vitrine-produto"
+    },
+    "children": [ 
+      "rich-text#shelf-title-04",
+      "list-context.product-list#vitrine-04"
+    ] 
+  },
+
+  "rich-text#shelf-title-04": {
+    "title": "04 - Titulo Vitrine",
+    "props": {
+      "text": "## O MELHOR PARA A SUA OBRA",   
+      "blockClass": "shelfTitle" 
+    }
+  },
+  
+  "list-context.product-list#vitrine-04": { 
+    "title": "04 - Vitrine",    
+    "blocks": ["product-summary.shelf#vitrine"], 
+    "children": ["slider-layout#slider-products"],
+    "props": { 
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+   // VIitrine produtos 05
+    
+   "flex-layout.row#shelf-05": {
+    "title": "05 - Vitrine",
+    "props": { 
+      "blockClass": ["vitrine-produto", "full"], 
+      "marginBottom": 7, 
+      "marginTop": 9 
+    },
+    "children": ["flex-layout.col#shelf-05"]
+  }, 
+ 
+  "flex-layout.col#shelf-05": { 
+    "title": "05 - Vitrine",
+    "props": { 
+      "blockClass": "vitrine-produto"
+    },
+    "children": [ 
+      "rich-text#shelf-title-05",
+      "list-context.product-list#vitrine-05"
+    ] 
+  },
+
+  "rich-text#shelf-title-05": {
+    "title": "05 - Titulo Vitrine",
+    "props": {
+      "text": "## AQUI TEM TAMBÉM",   
+      "blockClass": "shelfTitle"  
+    } 
+  },
+  
+  "list-context.product-list#vitrine-05": { 
+    "title": "05 - Vitrine",     
+    "blocks": ["product-summary.shelf#vitrine"], 
+    "children": ["slider-layout#slider-products"],
+    "props": {  
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  // VIitrine Produtos aplicados
+    
+  "flex-layout.row#produtos-aplicados": {
+    "title": "Vitrine - Produtos aplicados",
+    "props": { 
+      "blockClass": ["vitrine-produto", "produtos-aplicados"], 
+      "marginBottom": 7, 
+      "marginTop": 9 
+    },
+    "children": ["flex-layout.col#produtos-aplicados"]
+  }, 
+ 
+  "flex-layout.col#produtos-aplicados": { 
+    "title": "Vitrine - Produtos aplicados",
+    "props": { 
+      "blockClass": "vitrine-produto"
+    },
+    "children": [  
+      "rich-text#shelf-title-06",
+      "tab-layout#produtos-aplicados"
+    ] 
+  },
+
+  "tab-layout#produtos-aplicados":{
+    "children": [
+      "tab-list#produtos-aplicados",
+      "tab-content#produtos-aplicados"
+    ],
+    "props": {
+       "blockClass": "produtos-aplicados",
+       "defaultActiveTabId": "home1"
+     }, 
+     "title": "Vitrine produtos aplicados" 
+   },
+ 
+   "tab-list#produtos-aplicados": {
+     "children": [
+       "tab-list.item#produtos-aplicados1",
+       "tab-list.item#produtos-aplicados2",
+       "tab-list.item#produtos-aplicados3",
+       "tab-list.item#produtos-aplicados4",
+       "tab-list.item#produtos-aplicados5",
+       "tab-list.item#produtos-aplicados6",
+       "tab-list.item#produtos-aplicados7"
+     ]
+   },
+ 
+   "tab-list.item#produtos-aplicados1": {
+     "props": {
+       "tabId": "home1",
+       "label": "+",
+       "blockClass": "selantes", 
+       "defaultActiveTab": true
+     }
+   },
+ 
+   "tab-list.item#produtos-aplicados2": {  
+     "props": {
+       "tabId": "home2",
+       "label": "+",
+       "blockClass": "fundacao"
+     }
+   },
+ 
+   "tab-list.item#produtos-aplicados3": {
+     "props": {
+       "tabId": "home3",
+       "label": "+",
+       "blockClass": "piscinas"
+     }
+   },
+ 
+   "tab-list.item#produtos-aplicados4": {
+     "props": {
+       "tabId": "home4",
+       "label": "+",
+       "blockClass": "acabamentos"
+     }
+   }, 
+ 
+   "tab-list.item#produtos-aplicados5": { 
+     "props": {
+       "tabId": "home5",
+       "label": "+",
+       "blockClass": "telhas"
+     }
+   },
+
+   "tab-list.item#produtos-aplicados6": { 
+     "props": {
+       "tabId": "home6",
+       "label": "+",
+       "blockClass": "selantes-adesivos"
+     }
+   },
+
+   "tab-list.item#produtos-aplicados7": { 
+     "props": {
+       "tabId": "home7",
+       "label": "+",
+       "blockClass": "lajes"
+     }
+   },
+ 
+  "tab-content#produtos-aplicados": {
+    "children": [
+      "tab-content.item#home1",
+      "tab-content.item#home2",
+      "tab-content.item#home3",
+      "tab-content.item#home4",
+      "tab-content.item#home5",
+      "tab-content.item#home6",
+      "tab-content.item#home7"
+    ]
+  },
+ 
+  "tab-content.item#home1": {
+    "children": [
+      "rich-text#produtos-aplicados-01",
+     "list-context.product-list#produtos-aplicados-01-01"
+    ],
+    "props": {
+      "tabId": "home1"
+    }
+  },
+ 
+  "tab-content.item#home2": {
+    "children": [
+      "rich-text#produtos-aplicados-02",
+     "list-context.product-list#produtos-aplicados-01-02"
+    ],   
+    "props": { 
+      "tabId": "home2"
+    }
+  },
+ 
+   "tab-content.item#home3": {
+     "children": [
+      "rich-text#produtos-aplicados-03",
+     "list-context.product-list#produtos-aplicados-01-03"
+     ],   
+     "props": { 
+       "tabId": "home3"
+     }
+   },
+ 
+   "tab-content.item#home4": {
+     "children": [
+      "rich-text#produtos-aplicados-04",
+     "list-context.product-list#produtos-aplicados-01-04"
+     ],   
+     "props": { 
+       "tabId": "home4"
+     }
+   },
+ 
+   "tab-content.item#home5": {
+     "children": [
+      "rich-text#produtos-aplicados-05",
+     "list-context.product-list#produtos-aplicados-01-05"
+     ],   
+     "props": { 
+       "tabId": "home5"
+     }
+   }, 
+
+   "tab-content.item#home6": {
+    "children": [
+      "rich-text#produtos-aplicados-06",
+    "list-context.product-list#produtos-aplicados-01-06"
+    ],   
+    "props": { 
+      "tabId": "home6"
+    }
+  },
+
+  "tab-content.item#home7": {
+    "children": [
+      "rich-text#produtos-aplicados-07",
+      "list-context.product-list#produtos-aplicados-01-07"
+    ],   
+    "props": { 
+      "tabId": "home7"
+    }
+  },
+
+   "list-context.product-list#produtos-aplicados-01-01": {  
+    "title": "Vitrine - SELANTES E ADESIVOS",   
+    "blocks": ["product-summary.shelf#produtos-aplicados"], 
+    "children": ["list-context-renderer#produtos-aplicados"],
+    "props": {  
+      "blockClass": "produtos-aplicados",
+      "orderBy": "OrderByTopSaleDESC"
+    } 
+  },
+
+  "list-context-renderer#produtos-aplicados": {
+    "props": {
+      "listElement": "ul",    
+      "itemElement": "li" 
+    }
+  },  
+ 
+  "list-context.product-list#produtos-aplicados-01-02": { 
+    "title": "Vitrine - FUNDAÇÃO E ESTRUTURA",   
+    "blocks": ["product-summary.shelf#produtos-aplicados"],
+    "children": ["list-context-renderer#produtos-aplicados"], 
+    "props": { 
+      "blockClass": "produtos-aplicados",
+      "orderBy": "OrderByTopSaleDESC"
+    } 
+  },  
+
+  "list-context.product-list#produtos-aplicados-01-03": { 
+    "title": "Vitrine - Piscinas",   
+    "blocks": ["product-summary.shelf#produtos-aplicados"], 
+    "children": ["list-context-renderer#produtos-aplicados"],
+    "props": { 
+      "blockClass": "produtos-aplicados",
+      "orderBy": "OrderByTopSaleDESC"
+    } 
+  },
+
+  "list-context.product-list#produtos-aplicados-01-04": { 
+    "title": "Vitrine - Acabamentos",   
+    "blocks": ["product-summary.shelf#produtos-aplicados"], 
+    "children": ["list-context-renderer#produtos-aplicados"],
+    "props": { 
+      "blockClass": "produtos-aplicados",
+      "orderBy": "OrderByTopSaleDESC"
+    } 
+  },
+
+  "list-context.product-list#produtos-aplicados-01-05": { 
+    "title": "Vitrine - Telhas",   
+    "blocks": ["product-summary.shelf#produtos-aplicados"], 
+    "children": ["list-context-renderer#produtos-aplicados"],
+    "props": { 
+      "blockClass": "produtos-aplicados",
+      "orderBy": "OrderByTopSaleDESC"
+    } 
+  },  
+
+  
+  "list-context.product-list#produtos-aplicados-01-06": {  
+    "title": "Vitrine - Selantes",   
+    "blocks": ["product-summary.shelf#produtos-aplicados"],
+    "children": ["list-context-renderer#produtos-aplicados"], 
+    "props": { 
+      "blockClass": "produtos-aplicados",
+      "orderBy": "OrderByTopSaleDESC"
+    } 
+  },  
+
+  "list-context.product-list#produtos-aplicados-01-07": { 
+    "title": "Vitrine - Lajes",   
+    "blocks": ["product-summary.shelf#produtos-aplicados"], 
+    "children": ["list-context-renderer#produtos-aplicados"],
+    "props": { 
+      "blockClass": "produtos-aplicados",
+      "orderBy": "OrderByTopSaleDESC"
+    } 
+  },    
+  
+
+  "rich-text#shelf-title-06": {
+    "title": "Titulo - Produtos aplicados",
+    "props": {
+      "text": "## PRODUTOS APLICADOS",   
+      "blockClass": ["shelfTitle", "absolute"]
+    }  
+  },
+
+  "rich-text#produtos-aplicados-01": {
+    "title": "Titulo - Produtos aplicados",
+    "props": {
+      "text": "## SELANTES E ADESIVOS",   
+      "blockClass": "shelfTitle"  
+    } 
+  },
+
+  "rich-text#produtos-aplicados-02": {
+    "title": "Titulo - Produtos aplicados",
+    "props": {
+      "text": "## FUNDAÇÃO E ESTRUTURA",   
+      "blockClass": "shelfTitle"  
+    } 
+  },
+
+  "rich-text#produtos-aplicados-03": {
+    "title": "Titulo - Produtos aplicados",
+    "props": {
+      "text": "## PISCINAS",   
+      "blockClass": "shelfTitle"   
+    } 
+  },
+
+  "rich-text#produtos-aplicados-04": {
+    "title": "Titulo - Produtos aplicados",
+    "props": {
+      "text": "## ACABAMENTOS",   
+      "blockClass": "shelfTitle"  
+    } 
+  },
+
+  "rich-text#produtos-aplicados-05": {
+    "title": "Titulo - Produtos aplicados",
+    "props": {
+      "text": "## Telhas",   
+      "blockClass": "shelfTitle"  
+    } 
+  },
+
+  "rich-text#produtos-aplicados-06": {
+    "title": "Titulo - Produtos aplicados",
+    "props": {
+      "text": "## SELANTES E ADESIVOS",   
+      "blockClass": "shelfTitle"  
+    } 
+  },
+
+  "rich-text#produtos-aplicados-07": {
+    "title": "Titulo - Produtos aplicados",
+    "props": {
+      "text": "## LAJES",   
+      "blockClass": "shelfTitle"  
+    } 
+  }
+  
+} 

@@ -1,0 +1,322 @@
+{
+  "store.product": {
+    "children": [
+      "responsive-layout.mobile#product",
+      "responsive-layout.desktop#product"
+    ]
+  },
+  "flex-layout.row#specifications-title": {
+    "children": [
+      "rich-text#specifications"
+    ]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "text": "##### Product Specifications"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": [
+      "breadcrumb"
+    ]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7,
+      "fullWidth": true,
+      "blockClass": "product-description"
+    },
+    "children": [
+      "product-description"
+    ]
+  },
+  "flex-layout.row#rareviews": {
+    "props": {
+      "marginTop": 4,
+      "padding": 5,
+      "fullWidth": false,
+      "blockClass": "product-rareviews"
+    },
+    "children": [
+      "product-reviews"
+    ]
+  },
+  "condition-layout.product#availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-main",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 5,
+      "rowGap": 5,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 4,
+      "paddingBottom": 7,
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col"
+    ]
+  },
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "flex-layout.col#flags"
+    ]
+  },
+  "flex-layout.col#stack": {
+    "children": [
+      "stack-layout"
+    ],
+    "props": {
+      "width": "50%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "zoomMode": "disabled",
+      "displayThumbnailsArrows": false,
+      "thumbnailVisibility": "hidden"
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "infos-pdp"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-identifier.product",
+      "flex-layout.row#brand-share",
+      "product-rating-summary",
+      "product-separator",
+      "flex-layout.row#product-price",
+      "flex-layout.row#product-quantity-and-addToList",
+      "product-assembly-options",
+      "product-gifts",
+      "flex-layout.row#buy-button",
+      "link#pdp-whatsapp",
+      // "product-separator",
+      "availability-subscriber",
+      "custom-shipping-simulator"
+    ]
+  },
+  "flex-layout.row#product-quantity-and-addToList": {
+    "props": {
+      "blockClass": [
+        "quantity__addToList-row"
+      ]
+    },
+    "children": [
+      "product-quantity#pdp-quantity",
+      "add-to-list-btn#pdp"
+    ]
+  },
+  "product-quantity#pdp-quantity": {
+    "props": {
+      "blockClass": [
+        "product__quantity"
+      ]
+    }
+  },
+  "flex-layout.row#brand-share": {
+    "children": [
+      "vtex.store-components:product-brand",
+      "share#default"
+    ],
+    "props": {
+      "horizontalAlign": "between",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "brand-share",
+      "preserveLayoutOnMobile": true,
+      "marginTop": 4,
+      "marginBottom": 3
+    }
+  },
+  "vtex.store-components:product-brand": {
+    "props": {
+      "withLink": "text"
+    }
+  },
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": [
+      "vtex.store-components:product-name"
+    ]
+  },
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 8
+    },
+    "children": [
+      "flex-layout.col#buy-button-01",
+      "flex-layout.col#buy-button-02"
+    ]
+  },
+  "link#pdp-whatsapp": {
+    "props": {
+      "href": "https://api.whatsapp.com/send?phone=5511940168899",
+      "label": "Precisa de ajuda com o produto?",
+      "blockClass": "pdp-whatsapp"
+    }
+  },
+  "flex-layout.col#buy-button-01": {
+    "children": [
+      "add-to-cart-button#pdp-01"
+    ],
+    "props": {
+      "blockClass": "add"
+    }
+  },
+  "flex-layout.col#buy-button-02": {
+    "children": [
+      "add-to-cart-button#pdp-02"
+    ],
+    "props": {
+      "blockClass": "buy"
+    }
+  },
+  "flex-layout.row#product-availability": {
+    "props": {
+      "colGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col-availability"
+    ]
+  },
+  "flex-layout.col#right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": [
+        "infos-pdp",
+        "info-availability"
+      ]
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-identifier.product",
+      "flex-layout.row#brand-share",
+      "product-rating-summary",
+      "product-separator",
+      "add-to-list-btn#pdp",
+      "rich-text#estoque-indisponivel",
+      "link#fabrica"
+    ]
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "message-availability"
+    },
+    "children": [
+      "availability-subscriber"
+    ]
+  },
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": true,
+        "Pinterest": true
+      }
+    }
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": false
+    }
+  },
+  "add-to-list-btn#pdp": {
+    "props": {
+      "blockClass": "pagina-produto"
+    }
+  },
+  "flex-layout.row#description-mobile": {
+    "children": [
+      "disclosure-layout#description"
+    ],
+    "props": {
+      "blockClass": "description-mobile",
+      "marginBottom": 7
+    }
+  },
+  "disclosure-layout#description": {
+    "children": [
+      "disclosure-trigger#description",
+      "disclosure-content#description"
+    ],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+  "disclosure-trigger#description": {
+    "children": [
+      "rich-text#question-description"
+    ]
+  },
+  "disclosure-content#description": {
+    "children": [
+      "product-description"
+    ]
+  },
+  "rich-text#question-description": {
+    "props": {
+      "text": "Descrição do produto"
+    }
+  },
+  "rich-text#estoque-indisponivel": {
+    "props": {
+      "text": "ESTE PRODUTO ENCONTRA-SE INDISPONÍVEL NO MOMENTO",
+      "blockClass": "estoque-indisponivel"
+    }
+  },
+  "link#fabrica": {
+    "props": {
+      "href": "https://api.whatsapp.com/send?phone=5511940168899&text=Ol%C3%83%C2%A1%20gostaria%20de%20encomendar%20o%20produto%20Sikaglass%20300%201,30X100mts%20-%20SIKA",
+      "label": "pedir para fabricar",
+      "blockClass": "fabrica"
+    }
+  }
+}

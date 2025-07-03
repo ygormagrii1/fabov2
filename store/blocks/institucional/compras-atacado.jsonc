@@ -1,0 +1,116 @@
+{
+    "store.custom#compras-atacado": {
+      "blocks": [
+        "responsive-layout.desktop#ca-desk", 
+        "responsive-layout.phone#ca-mob"
+      ]  
+    },   
+    "responsive-layout.desktop#ca-desk": {
+      "children": ["flex-layout.row#ca-content-desktop"]
+    },
+    "responsive-layout.phone#ca-mob": {
+      "children": ["flex-layout.row#ca-content-mobile"]
+    },
+    
+  
+    "flex-layout.row#ca-content-desktop":{
+      "children": [
+        "flex-layout.col#ca-menu-lateral",
+        "flex-layout.col#ca-text-page" 
+      ],
+      "props": {
+        "paddingTop": "8",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+    "flex-layout.row#ca-content-mobile":{
+      "children": [
+        "flex-layout.col#ca-text-page",
+        "flex-layout.row#ca-lateral-menu-mobile"
+      ]
+    }, 
+    "flex-layout.row#ca-lateral-menu-mobile":{
+      "children": [
+        "flex-layout.col#ca-menu1-mobile",
+        "flex-layout.col#ca-menu2-mobile"
+      ],
+      "props": { 
+        "preserveLayoutOnMobile": true, 
+        "paddingTop": "5",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+  
+  
+    "flex-layout.col#ca-menu-lateral": {
+      "title": "Menu Lateral Desktop",
+      "children": [
+        "rich-text#ca-items-menu1-lateral",
+        "rich-text#ca-items-menu2-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "18%"
+      }
+    },
+    "flex-layout.col#ca-menu1-mobile": {
+      "title": "Menu Lateral Mobile",
+      "children": [
+        "rich-text#ca-items-menu1-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#ca-menu2-mobile": { 
+      "children": [
+        "rich-text#ca-items-menu2-lateral" 
+      ],
+      "props": { 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#ca-text-page": {
+      "title": "Conteúdo Principal",
+      "children": [ 
+        "rich-text#ca-txt-page-title",
+        "rich-text#ca-txt-page"
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "78%"
+      }
+    },  
+    "rich-text#ca-items-menu1-lateral": {
+      "title": "Coluna 1",
+      "props": { 
+        "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#ca-items-menu2-lateral": {
+      "title": "Coluna 2",
+      "props": { 
+        "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#ca-txt-page-title": {
+      "title": "Conteúdo Principal - Título",
+      "props": { 
+        "text": "# **Compras Atacado** #" ,
+        "blockClass": "mainTitle" 
+      } 
+    },
+    "rich-text#ca-txt-page": {
+      "title": "Conteúdo Principal - Texto",
+      "props": { 
+          "text": "Se deseja um atendimento personalizado ou em quantidade para atacado ligue para 11 3103 4660 ou escreva para nós: falecom@fastobra.com.br",
+          "blockClass": "mainContent"
+      }
+    } 
+  }
+  

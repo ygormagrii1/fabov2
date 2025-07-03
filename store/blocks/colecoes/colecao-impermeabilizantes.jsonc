@@ -1,0 +1,31 @@
+{
+    "store.custom#colecao-impermeabilizantes": {
+        "blocks": [
+            "search-result-layout.customQuery#colecaoimpermeabilizantes"
+        ]
+    },
+
+    "search-result-layout.customQuery#colecaoimpermeabilizantes": {
+        "title": "IMPERMEABILIZANTES",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "154",
+                "blockClass": [
+                    "colecao-lp"
+                ]
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+
+}

@@ -1,0 +1,259 @@
+.galleryLayoutOptionButton {
+  background-color: #F0F0F0;
+  color: #3F3F40;
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+}
+
+.galleryLayoutOptionButton--selected {
+  background-color: #3F3F40;
+  color: #FFFFFF;
+}
+
+.galleryLayoutSwitcher {
+  border-radius: 4px 4px 4px 4px;
+  justify-content: center;
+  overflow: hidden;
+  width: auto !important;
+  align-self: center
+}
+
+.galleryItem--list {
+  border-bottom: 1px #E7E9EE solid;
+}
+
+.galleryTitle--layout{
+  font-family: 'Raleway', sans-serif; 
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0px;
+  color: #002470;
+  text-transform: uppercase; 
+}
+
+.totalProducts--layout{
+  font-family: 'Raleway', sans-serif;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #111110; 
+  padding: 0;  
+  border: none;
+}
+
+.totalProducts--layout .totalProductsMessage{
+  color: #111110;
+}
+
+.filtersWrapper .filterMessage{ 
+  color: #003a7f;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filtersWrapper .filter__container{
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 8px; 
+}
+ 
+.filtersWrapper .filter__container--title{
+  border: none;
+  padding: 0px; 
+}
+
+.filtersWrapper .filter__container--selectedFilters{
+  display: none; 
+}
+
+.filtersWrapper .filterTitleSpan{
+  font-family: 'Raleway', sans-serif;
+  line-height: 14px;
+  font-size: 14px; 
+  font-weight: bold;
+  color: #363631;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filtersWrapper .filter{
+  padding: 0;
+}  
+
+.filtersWrapper .filterTemplateOverflow{
+  padding-bottom: 0;   
+  max-height: 100%!important; 
+} 
+
+.filtersWrapper .filterTemplateOverflow .filterContent{
+  padding-top: 20px;
+}
+
+.filtersWrapper .filterIcon{
+  padding: 0;
+}
+
+.filtersWrapper .filterIcon .caretIcon{
+  display: none;
+} 
+
+.filtersWrapper .filterIcon::after{
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 7px solid black;
+  transform: rotate(0deg);
+  transition: all 0.3s;
+  content: ''; 
+}
+
+.filtersWrapper .filterIsOpen .filterIcon::after{
+  transform: rotate(180deg);
+  transition: all 0.3s; 
+}
+
+.filtersWrapper :global(.vtex-checkbox__container){
+  display: none; 
+}
+
+.filtersWrapper .filterItem :global(.vtex-checkbox__label){
+  font-family: 'Raleway', sans-serif;
+  line-height: 18px; 
+  font-size: 14px; 
+  font-weight: 500; 
+  letter-spacing: 0px;
+  color: #363631;
+  position: relative;
+  cursor: pointer;
+  margin: 5px 0 15px 0; 
+}
+
+.filtersWrapper .filterItem--selected :global(.vtex-checkbox__label){
+  text-decoration: underline gray;  
+}
+
+.gallery{
+  padding: 0; 
+}
+
+.buttonShowMore--layout :global(.vtex-button__label){
+  font-weight: bold; 
+}
+
+@media(min-width: 768px){
+  .orderByDropdown .orderByOptionItem{
+    font-family: 'Raleway', sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #b5b6b1; 
+    padding: 5px 10px;
+    border-radius: 17px;
+    text-transform: lowercase;
+    transition: all 0.3s;  
+    min-width: auto; 
+    text-align: center;
+    width: auto; 
+    margin: 0px 5px;
+  }
+  
+  .orderByDropdown .orderByOptionsContainer{
+    box-shadow: none;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    padding: 14px 0;
+    margin: 10px 0 15px;  
+    display: flex; 
+    justify-content: center;
+    position: relative; 
+    align-items: center;
+  }
+   
+  .orderByDropdown .orderByOptionItem--selected{
+    background: #cbe1f7;
+    color: #003a7f;
+  }
+  
+  .orderByDropdown .orderByButton{
+    display: none; 
+  }
+  
+  .orderByDropdown .orderByOptionsContainer::before{
+    content: 'Ordenar por:';
+    color: #111110;
+    font-weight: 500; 
+    text-transform: initial; 
+    margin-right: 12px; 
+  }
+}
+
+
+@media(max-width: 768px){
+  .gallery .galleryItem{
+    padding: 0;
+    margin-bottom: 30px; 
+  }  
+  .gallery .galleryItem:nth-child(odd){
+    padding-right: 2%;
+  }   
+  .gallery .galleryItem:nth-child(even){
+    padding-left: 2%;
+  } 
+  .galleryTitle--layout{
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .orderByButton{
+    padding: 12px 15px;
+    border-radius: 3px;
+    border: 1px solid #e3e3e3;
+    color: #111110;
+    font-weight: 500;
+    text-transform: initial;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjUiIHZpZXdCb3g9IjAgMCA4IDUiPgogIDxwYXRoIGlkPSJQb2x5Z29uXzQiIGRhdGEtbmFtZT0iUG9seWdvbiA0IiBkPSJNMy40MTQuNzMyYS43NS43NSwwLDAsMSwxLjE3MSwwbDIuNDQsMy4wNDlBLjc1Ljc1LDAsMCwxLDYuNDQsNUgxLjU2QS43NS43NSwwLDAsMSwuOTc1LDMuNzgxWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOCA1KSByb3RhdGUoMTgwKSIgZmlsbD0iIzM2MzYzMSIvPgo8L3N2Zz4K);
+    background-size: 10px;
+    background-position: 93% 56%;
+    width: 45vw;
+    font-size: 14px;
+    justify-content: left;
+  } 
+
+  .orderByButton .filterPopupTitle{
+    font-size: 14px; 
+    text-transform: capitalize;
+  }
+
+  .orderByButton .filterPopupArrowIcon{
+    display: none; 
+  }
+   
+  .orderByOptionsContainer{
+    border-radius: 5px;
+    border: none; 
+    top: 43px; 
+    width: 45vw; 
+    background: white;
+  }
+  
+  .orderByOptionsContainer .orderByOptionItem{
+    color: #3f3f40;
+    font-size: 14px; 
+    padding: 10px 10px;  
+  }
+  
+  .orderByOptionsContainer .orderByOptionItem--selected, .orderByButton .orderByText{
+    display: none;
+  }
+
+  .orderByDropdown{
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+  }    
+}

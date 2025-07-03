@@ -1,0 +1,87 @@
+{
+  "flex-layout.col#product-price-summary": {
+    "children": [
+      "flex-layout.row#selling-price-savings",
+      "pix-flag",
+      "product-installments#summary"
+    ],
+    "props": {
+      "width": "100%",
+      "blockClass": "product-price-summary"
+    }
+  },
+  "product-installments#summary": {
+    "props": {
+      "installmentsCriteria": "max-quantity-without-interest",
+      "blockClass": "summary",
+      "message": "Ou em até {installmentsNumber} {installmentValue} sem juros",
+      "hasInterest": true
+    }
+  },
+  "flex-layout.row#selling-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": false,
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "product-list-price#summary",
+      "pix-price"
+    ]
+  },
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary",
+      "message": "{listPriceValue}"
+    }
+  },
+  "product-list-price": {
+    "props": {
+      "blockClass": "summary",
+      "message": "{listPriceValue} "
+    }
+  },
+  "product-list-price#summary-produtos-aplicados": {
+    "props": {
+      "blockClass": "summary",
+      "message": "{listPriceValue} "
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary",
+      "message": "{sellingPriceValue}"
+    }
+  },
+  "product-selling-price#summary-produtos-aplicados": {
+    "props": {
+      "blockClass": "summary",
+      "message": "{sellingPriceValue}"
+    }
+  },
+  "flex-layout.row#selling-price": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": [
+      "product-selling-price"
+    ]
+  },
+  "flex-layout.row#list-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 2,
+      "marginTop": 5
+    },
+    "children": [
+      "product-list-price",
+      "product-price-savings"
+    ]
+  }
+}

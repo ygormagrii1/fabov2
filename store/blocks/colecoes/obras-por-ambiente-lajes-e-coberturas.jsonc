@@ -1,0 +1,31 @@
+{
+    "store.custom#obras-por-ambiente-lajes-e-coberturas": {
+        "blocks": [
+            "search-result-layout.customQuery#obrasporambientelajesecoberturas"
+        ]
+    },
+
+    "search-result-layout.customQuery#obrasporambientelajesecoberturas": {
+        "title": "OBRAS POR AMBIENTE - LAJES E COBERTURAS",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "170",
+                "blockClass": [
+                    "colecao-lp"
+                ]
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+
+}

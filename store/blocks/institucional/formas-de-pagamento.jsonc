@@ -1,0 +1,116 @@
+{
+    "store.custom#formas-de-pagamento": {
+      "blocks": [
+        "responsive-layout.desktop#fp-desk", 
+        "responsive-layout.phone#fp-mob"
+      ]  
+    },   
+    "responsive-layout.desktop#fp-desk": {
+      "children": ["flex-layout.row#fp-content-desktop"]
+    },
+    "responsive-layout.phone#fp-mob": {
+      "children": ["flex-layout.row#fp-content-mobile"]
+    },
+    
+  
+    "flex-layout.row#fp-content-desktop":{
+      "children": [
+        "flex-layout.col#fp-menu-lateral",
+        "flex-layout.col#fp-text-page" 
+      ],
+      "props": {
+        "paddingTop": "8",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+    "flex-layout.row#fp-content-mobile":{
+      "children": [
+        "flex-layout.col#fp-text-page",
+        "flex-layout.row#fp-lateral-menu-mobile"
+      ]
+    }, 
+    "flex-layout.row#fp-lateral-menu-mobile":{
+      "children": [
+        "flex-layout.col#fp-menu1-mobile",
+        "flex-layout.col#fp-menu2-mobile"
+      ],
+      "props": { 
+        "preserveLayoutOnMobile": true, 
+        "paddingTop": "5",
+        "paddingBottom": "8",
+        "horizontalAlign": "between"
+      }
+    }, 
+  
+  
+    "flex-layout.col#fp-menu-lateral": {
+      "title": "Menu Lateral Desktop",
+      "children": [
+        "rich-text#fp-items-menu1-lateral",
+        "rich-text#fp-items-menu2-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "18%"
+      }
+    },
+    "flex-layout.col#fp-menu1-mobile": {
+      "title": "Menu Lateral Mobile",
+      "children": [
+        "rich-text#fp-items-menu1-lateral" 
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#fp-menu2-mobile": { 
+      "children": [
+        "rich-text#fp-items-menu2-lateral" 
+      ],
+      "props": { 
+        "width": "48%"
+      }
+    },
+    "flex-layout.col#fp-text-page": {
+      "title": "Conteúdo Principal",
+      "children": [ 
+        "rich-text#fp-txt-page-title",
+        "rich-text#fp-txt-page"
+      ],
+      "props": { 
+        "verticalAlign": "top", 
+        "width": "78%"
+      }
+    },  
+    "rich-text#fp-items-menu1-lateral": {
+      "title": "Coluna 1",
+      "props": { 
+        "text": "## SOBRE NÓS ##  \n [Quem somos](/institucional/nossa-historia) \n [Nossas lojas](/institucional/nossas-lojas) \n [Política de privacidade](/institucional/politicas) \n [Compras atacado](/institucional/compras-atacado)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#fp-items-menu2-lateral": {
+      "title": "Coluna 2",
+      "props": { 
+        "text": "## AJUDA E SUPORTE ##  \n [Atendimento](/institucional/contato) \n [Formas de pagamento](/institucional/formas-de-pagamento) \n [Trocas e devoluções](/institucional/devolucoes) \n [Prazos e envio](/institucional/frete-entrega)",
+        "blockClass": "menuinstitucionais"
+      }
+    },
+    "rich-text#fp-txt-page-title": {
+      "title": "Conteúdo Principal - Título",
+      "props": { 
+        "text": "# **Pagamentos** #" ,
+        "blockClass": "mainTitle" 
+      } 
+    }, 
+    "rich-text#fp-txt-page": {
+      "title": "Conteúdo Principal - Texto",
+      "props": { 
+          "text": "A Política de Pagamentos abaixo constitui parte integrante dos Termos e Condições de Uso. \n  \n **1. Identificação** \n Este site é de propriedade, mantido, e operado por Comercial Antonio Carvalho Ltda., com endereço na Av. Dom Bosco, 575 – Vila Lucinda – Santo André – SP – Cep 09240-500, inscrita no CNPJ/MF sob o nº 02.559.428/0001-02, com Inscrição Estadual nº 626.350.592.116. \n  \n **2. Contato – CAF (Central de Atendimento FastObra)** \n Caso o Usuário necessite de qualquer informação, esclarecimento ou atendimento com relação a esta Política de Pagamentos, a FastObra disponibiliza o CAF para receber todas as comunicações que o Usuário desejar fazer. O CAFO opera por meios dos canais de comunicação listados abaixo: (a) Presencialmente, em qualquer uma de nossas unidades, durante os horários de funcionamento; (b) Pelo telefone 3103-4660, de segunda a quinta das 8h às 18h e sextas das 8h às 17h; (c) Por correspondência endereçada à FastObra, Av. Dom Bosco, 575 – Vila Lucinda – Santo André – SP – Cep 09240-500, sempre acompanhada das informações de contato do consumidor, para que possamos finalizar o atendimento. Em todos os casos, o Usuário receberá, pelo mesmo canal de comunicação, uma confirmação imediata do recebimento da sua demanda, que será tratada e respondida em um prazo máximo de 5 (cinco) dias. Além disso, a FastObra disponibiliza neste site uma seção de FAQ (Perguntas mais frequentes), bem como suas demais políticas: Política de Trocas e Devoluções, Política de Entrega de Produtos, Política de Privacidade e Segurança e, finalmente, os Termos e Condições de Uso deste site. Todos estes documentos podem ser consultados online ou baixados pelos usuários em formato PDF para consulta off-line e arquivo. \n  \n **3. Meios de pagamento** \n 3.1. Cartão de Crédito \n 3.1.1. O Cliente poderá utilizar 1 (um) cartão de crédito emitido no Brasil em seu nome, seja como titular ou dependente, com as bandeiras: Visa®, Mastercard®, Elo, Hiper, Hipercard, Diners e American Express® e algumas outras bandeiras. \n 3.1.2. O prazo de aceitação do pedido é de até 48 horas a contar da data da aprovação do pagamento pela instituição bancária. \n 3.2. Boleto Bancário \n 3.2.1. O prazo do boleto bancário é de 1 (um) dia útil e o seu pagamento deverá ser à vista, em parcela única e no valor total da Compra realizada. \n 3.2.2. A confirmação do recebimento do valor ocorrerá em até 2 (dois) dias úteis a contar do vencimento do boleto bancário. \n 3.2.3. Caso o pagamento do boleto bancário seja através de cheque, o prazo para confirmação de recebimento será de até 5 (cinco) dias úteis, após a compensação do cheque. \n 3.2.4. O pedido prosseguirá para o fluxo de envio após a confirmação do recebimento do pagamento pela FastObra. 3.2.5. O pedido será automaticamente cancelado em caso de não pagamento ou pagamento com valor diferente do que consta no boleto bancário. \n 3.3. Parcelamento \n 3.3.1 Parcelamos em até 12 vezes, com parcelas mínimas de R$100,00. \n 3.3.2 O parcelamento está sujeito a alterações e estará sinalizado no produto \n  \n **4. Pedido de Compra** \n 4.1. A FastObra disponibiliza uma página descritiva para cada produto, com informações relativas à característica, composição, eventual risco à saúde e segurança, o prazo de validade, origem, disponibilidade em estoque, condição de pagamento e preço total à vista e parcelado. \n 4.2. Após escolher o produto o Cliente será direcionado para o carrinho e poderá visualizar: o produto, a quantidade escolhida, o valor, bem como calcular o frete. Após visualização dos dados será necessário identificar as informações de entrega e escolher o meio de pagamento. \n 4.3. A FastObra, imediatamente, enviará um e-mail ao Cliente indicando o número da Compra, o produto, a quantidade, o preço, o valor do frete, o meio de pagamento e o prazo estimado ou o agendamento de entrega. \n 4.4. Após a finalização da Compra, por medida de segurança, a FastObra não aceitará alterações de meio de pagamento, produto, quantidade do produto, local de entrega, dados cadastrais e data ou turno da entrega. \n 4.5. Para alterar o meio de pagamento em Compra realizada através de boleto bancário, basta não efetuar seu pagamento que o boleto será automaticamente cancelado. Após, basta refazer a Compra e escolher o meio de pagamento de sua preferência dentre os disponíveis no Site. \n 4.6. Durante o processo de Compra será informado uma estimativa de prazo para a entrega do produto considerando: o produto, sua quantidade, o estoque disponível e a distância entre nossas unidades e o endereço de entrega informado pelo Cliente. \n 4.7. O prazo de entrega será contado a partir da data de aprovação do pagamento pelas instituições bancárias e poderá variar de acordo com o meio e forma de pagamento escolhida. \n 4.8. A escolha da transportadora é de responsabilidade exclusiva da FastObra. \n  \n **5. Segurança dos Pagamentos** \n 5.1. A Compra poderá ser cancelada caso haja qualquer inconformidade relacionada a qualquer dado informado pelo Cliente. \n 5.2. Em Compras realizadas através de cartão de crédito, por medida de segurança, terceiro credenciado poderá entrar em contato com o Cliente solicitando dados de acordo com a necessidade para confirmação da Compra. \n 5.3. Para informações mais específicas consulte nossa Política de Privacidade e Segurança. \n  \n **Você pode baixar essa política aqui**",
+          "blockClass": "mainContent"
+      }
+    } 
+  }
+  

@@ -1,0 +1,138 @@
+/* add transitions */
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-logoLink),
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-minicart-2-x-openIconContainer),
+:global(.vtex-sticky-layout-0-x-container)
+  :global(.vtex-store-components-3-x-searchBarContainer) {
+  transition: all 0.3s ease;
+  display: block;
+  padding: 0px;
+}
+
+/* desktop/mobile main header padding and background transitions */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+  transition: background 0.3s ease;
+  will-change: padding, background;
+}
+
+/* main header desktop has a bigger padding when not stuck */
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  align-items: center;
+}
+/*
+ * remove the extra padding when stuck from the desktop header
+ * we add a transition only when "stuck" for the "unstick" step seem faster
+ */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+  transition: padding 0.3s ease, background 0.3s ease;
+  padding-top: 12px; 
+  padding-bottom: 12px;
+}
+
+.hover-b--action-secondary:hover, .hover-bg-action-secondary:focus, .hover-bg-action-secondary:hover {
+  background-color: transparent;
+}
+
+
+/* stick wrapper with the same color as the desktop/mobile header */
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+  background-color: white; 
+}
+
+:global(.vtex-sticky-layout-0-x-container--sticky-header){
+  background-color: white; 
+}
+
+/* resize the logo for neat effect */
+:global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-store-components-3-x-logoLink) {
+  transform: scale(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-logoLink),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-minicart-2-x-openIconContainer),
+  :global(.vtex-sticky-layout-0-x-container)
+    :global(.vtex-store-components-3-x-searchBarContainer),
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    transition: none;
+  }
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer)  :global(.vtex-input-prefix__group){
+  width: 447px;
+}
+
+:global(.vtex-input__suffix ){
+  background: #e3e3e3;
+  border-radius: unset;
+
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--menu-desktop) :global(.vtex-menu-2-x-menuContainer--menu-desktop){
+  justify-content: space-between;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--menu-desktop) :global(.vtex-menu-2-x-menuContainer--menu-desktop) :global(.vtex-menu-2-x-styledLinkContent){
+  font-family: 'Raleway', sans-serif;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #6a6a6a;
+  display: flex;
+  align-items: center; 
+  transition: all 0.3s;
+  position: relative;
+  transition: all 0.3s;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--menu-desktop) :global(.vtex-menu-2-x-menuContainer--menu-desktop) :global(.vtex-menu-2-x-menuItem):hover :global(.vtex-menu-2-x-styledLinkContent){
+  color: #003a7f;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--menu-desktop) :global(.vtex-menu-2-x-menuContainer--menu-desktop) :global(.vtex-menu-2-x-menuItem) :global(.vtex-menu-2-x-styledLinkContent){
+  position: relative;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--menu-desktop) :global(.vtex-menu-2-x-menuContainer--menu-desktop) :global(.vtex-menu-2-x-menuItem) :global(.vtex-menu-2-x-styledLinkContent)::before{
+  content: '';
+  position: absolute;
+  width: 0; 
+  right: 50%;
+  height: 3px;
+  background: #003a7f;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--menu-desktop) :global(.vtex-menu-2-x-menuContainer--menu-desktop) :global(.vtex-menu-2-x-menuItem) :global(.vtex-menu-2-x-styledLinkContent)::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  left: 50%;
+  height: 3px;
+  background: #003a7f;
+  bottom: -5px;
+  transition: all 0.3s;
+}
+ 
+:global(.vtex-menu-2-x-menuContainerNav--menu-desktop) :global(.vtex-menu-2-x-menuContainer--menu-desktop) :global(.vtex-menu-2-x-menuItem):hover :global(.vtex-menu-2-x-styledLinkContent)::after,
+:global(.vtex-menu-2-x-menuContainerNav--menu-desktop) :global(.vtex-menu-2-x-menuContainer--menu-desktop) :global(.vtex-menu-2-x-menuItem):hover :global(.vtex-menu-2-x-styledLinkContent)::before{
+  width: 50%;
+}
+
+@media(max-width: 768px){
+  :global(.vtex-store-components-3-x-searchBarContainer)  :global(.vtex-input-prefix__group){
+    width: 100%;
+  }
+}
+

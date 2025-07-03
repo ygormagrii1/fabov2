@@ -1,0 +1,66 @@
+{
+    "header-layout.desktop": {
+        "children": [
+            "custom-styles",
+            "cookie",
+            "flex-layout.row#top-header",
+            "sticky-layout#header-desktop",
+            "flex-layout.row#header-menu"
+        ] 
+    }, 
+
+    "sticky-layout#header-desktop": {
+        "props": {
+            "blockClass": "sticky-header"
+        },
+        "children": [
+            "flex-layout.row#desktop" 
+        ]
+    },
+
+    "flex-layout.col#spacer": {
+        "props": {
+            "width": "grow"
+        }
+    },
+
+    "flex-layout.row#desktop": {
+        "props": {
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": false
+        },
+        "children": [
+            "flex-layout.col#logo-desktop",
+            "search-bar",
+            "flex-layout.row#aviso-topo",
+            "flex-layout.row#whatsapp-topo",
+            "login",
+            "minicart.v2"
+        ]
+    }, 
+
+    // MENU DE CATEGORIAS
+    "flex-layout.row#header-menu": {
+        "children": ["vtex.menu@2.x:menu#category-menu"],
+        "props": {
+            "blockClass": "menu-categorias-header"
+        }  
+    }, 
+
+    "custom-category-menu#header-all-category-menu": { 
+        "props": {
+            "showAllDepartments": true,
+            "showSubcategories": true, 
+            "menuDisposition": "left", 
+            "departments": [],   
+            "sortSubcategories": "name", 
+            "mobileMode": false,
+            "alwaysShowSubcategories": true 
+        }
+    }  
+
+} 

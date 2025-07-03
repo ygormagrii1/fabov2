@@ -1,0 +1,13 @@
+{
+  
+  "responsive-layout.mobile#product": { 
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      "flex-layout.row#description-mobile",
+      "flex-layout.row#rareviews"
+    ] 
+  } 
+
+} 
+  

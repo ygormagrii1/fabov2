@@ -1,0 +1,20 @@
+/* Geral */
+:global(.vtex-store-components-3-x-productDescriptionText) strong{
+    font-weight: 600;
+}
+
+:global(.vtex-store-components-3-x-productDescriptionText) h2{
+    font-size: 18px;
+}
+
+:global(.vtex-address-form__postalCode-forgottenURL) a{
+    color: #ff6344;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer .vtex-input-prefix__group){
+  border: solid 1px #ebebeb;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer .vtex-styleguide-9-x-noAppearance){
+  background: #ffffff !important;
+}

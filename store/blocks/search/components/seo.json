@@ -1,0 +1,1002 @@
+{
+    "flex-layout.row#texto-seo":{
+        "children": [ 
+            "flex-layout.col#texto-seo"
+        ], 
+        "props":{ 
+            "marginBottom": 6 
+        }
+    },
+ 
+    "flex-layout.col#texto-seo": {
+        "children": [
+            "rich-text#seo-geral",
+            "condition-layout.category#adesivo-chapisco",
+            "condition-layout.category#pintura-e-protecao",
+            "condition-layout.category#tintas",
+            "condition-layout.category#coberturas", 
+            "condition-layout.category#drenagem-e-fundacao",
+            "condition-layout.category#geocompostos",
+            "condition-layout.category#mantas-geotextil",
+            "condition-layout.category#impermeabilizacao",
+            "condition-layout.category#argamassas-impermeabilizantes",
+            "condition-layout.category#polimericos-acrilicos",
+            "condition-layout.category#telas-estruturantes",
+            "condition-layout.category#primers",
+            "condition-layout.category#blocos-de-asfalto",
+            "condition-layout.category#membranas-liquidas",
+            "condition-layout.category#epis-e-seguranca",
+            "condition-layout.category#desmoldantes", 
+            "condition-layout.category#aditivos-para-argamassas",
+            "condition-layout.category#groutes",
+            "condition-layout.category#juntas-e-perfilados",
+            "condition-layout.category#expansores-e-argamassar-para-alvenaria",
+            "condition-layout.category#fibras",
+            "condition-layout.category#argamassas-de-assentamento",
+            "condition-layout.category#argamassas",
+            "condition-layout.category#rejuntes",
+            "condition-layout.category#reparo-estrutural-e-pisos-de-concreto",
+            "condition-layout.category#ferramentas",
+            "condition-layout.category#lubrificantes",
+            "condition-layout.category#fachada",
+            "condition-layout.category#automotivo-e-transportes",
+            "condition-layout.category#nautico",
+            "condition-layout.category#silicones",
+            "condition-layout.category#tubos-de-drenagem",
+            "condition-layout.category#papelao-ondulado",
+            "condition-layout.category#pavimentacao",
+            "condition-layout.category#espumas-expansivas",
+            "condition-layout.category#vernizes-e-hidrorepelentes",
+            "condition-layout.category#delimitador-de-profundidade",
+            "condition-layout.category#aditivos-para-concreto",
+            "condition-layout.category#fixacao---parafusos-e-ferragens",
+            "condition-layout.category#polidores",
+            "condition-layout.category#produto-para-infiltracao",
+            "condition-layout.category#grauteamento",
+            "condition-layout.category#mantas-para-telhado",
+            "condition-layout.category#tipos-de-argamassa",
+            "condition-layout.category#massa-corrida",
+            "condition-layout.category#reforma-da-casa",
+            "condition-layout.category#reforma-rapida",
+            "condition-layout.category#como-usar-cimento-queimado-na-parede",
+            "condition-layout.category#ferramenta-para-casa",
+            "condition-layout.category#tipos-de-chave-de-fenda",
+            "condition-layout.category#kit-de-ferramentas",
+            "condition-layout.category#argamassa-para-porcelanato",
+            "condition-layout.category#vedalaje",
+            "condition-layout.category#cimento-queimado",
+            "condition-layout.category#ofertas-de-sao-joao",
+            "condition-layout.category#Black-Friday-material-de-construcao",
+            "condition-layout.category#ferramentas--maquinas-e-equipamentos",
+            "condition-layout.category#casa-renovada",
+            "condition-layout.category#melhores-marcas-de-desmoldantes-para-concreto",
+            "condition-layout.category#ferramentas--ferramentas-manuais",
+            "condition-layout.category#reparo-estrutural-e-pisos-de-concreto--agente-de-cura"
+        ] 
+    }, 
+
+    "rich-text#seo-geral":{
+        "props": {
+            "title": "Texto SEO",  
+            "text": "",
+            "blockClass": "text-seo"
+        }
+    },
+    
+    "condition-layout.category#adesivo-chapisco": {
+        "props": {
+        "conditions": [
+            {  
+            "subject": "category", 
+                "arguments": {
+                    "ids": ["23"]
+                }
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#adesivo-chapisco" 
+        } 
+    },
+
+    "condition-layout.category#pintura-e-protecao": {
+        "props": {
+        "conditions": [
+            {  
+            "subject": "department",  
+                "arguments": {
+                    "ids": ["30"] 
+                }
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#pintura-e-protecao" 
+        }
+    },
+
+    "condition-layout.category#tintas": {
+        "props": {
+        "conditions": [
+            {  
+            "subject": "category", 
+                "arguments": {
+                    "ids": ["31"] 
+                } 
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#tintas" 
+        }
+    },
+
+    "condition-layout.category#coberturas": {
+        "props": {
+        "conditions": [
+            {  
+            "subject": "department",  
+                "arguments": {
+                    "ids": ["43"] 
+                }
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#coberturas" 
+        }
+    },
+
+    "condition-layout.category#drenagem-e-fundacao": {
+        "props": {
+        "conditions": [
+            {  
+            "subject": "department",  
+                "arguments": { 
+                    "ids": ["1"]  
+                }
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#drenagem-e-fundacao" 
+        }
+    },
+
+    "condition-layout.category#geocompostos": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",
+                "arguments": { 
+                    "ids": ["2"]  
+                } 
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#geocompostos" 
+        }
+    },
+
+    "condition-layout.category#mantas-geotextil": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",
+                "arguments": { 
+                    "ids": ["3"]  
+                } 
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#mantas-geotextil" 
+        }
+    },
+
+    "condition-layout.category#impermeabilizacao": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",  
+                "arguments": {  
+                    "ids": ["6"]  
+                } 
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#impermeabilizacao" 
+        }
+    },
+
+    "condition-layout.category#argamassas-impermeabilizantes": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",
+                "arguments": {   
+                    "ids": ["7"]   
+                } 
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#argamassas-impermeabilizantes" 
+        }
+    },
+
+    "condition-layout.category#polimericos-acrilicos": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",
+                "arguments": {   
+                    "ids": ["8"]   
+                } 
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#polimericos-acrilicos" 
+        } 
+    },
+
+    "condition-layout.category#telas-estruturantes": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",
+                "arguments": {      
+                    "ids": ["9"]     
+                }  
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#telas-estruturantes" 
+        }
+    },
+
+    "condition-layout.category#primers": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",
+                "arguments": {      
+                    "ids": ["11"]     
+                }   
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#primers" 
+        }
+    },
+
+    "condition-layout.category#blocos-de-asfalto": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",
+                "arguments": {      
+                    "ids": ["12"]     
+                }   
+            } 
+        ],
+        "matchType": "any",
+        "Then": "rich-text#blocos-de-asfalto" 
+        }
+    },
+
+    "condition-layout.category#membranas-liquidas": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",
+                "arguments": {      
+                    "ids": ["13"]     
+                }   
+            } 
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#membranas-liquidas" 
+        }
+    },
+
+    "condition-layout.category#epis-e-seguranca": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",   
+                "arguments": {      
+                    "ids": ["64"]     
+                }   
+            } 
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#epis-e-seguranca" 
+        }
+    },
+
+    "condition-layout.category#desmoldantes": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category", 
+                "arguments": {      
+                    "ids": ["15"]     
+                }   
+            } 
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#desmoldantes" 
+        }
+    },
+
+    "condition-layout.category#aditivos-para-argamassas": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category", 
+                "arguments": {      
+                    "ids": ["16"]     
+                }   
+            } 
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#aditivos-para-argamassas" 
+        }
+    },
+
+    "condition-layout.category#groutes": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category", 
+                "arguments": {      
+                    "ids": ["18"]     
+                }   
+            }  
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#groutes" 
+        }
+    },
+
+    "condition-layout.category#juntas-e-perfilados": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category", 
+                "arguments": {      
+                    "ids": ["19"]     
+                }   
+            }  
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#juntas-e-perfilados" 
+        }
+    },
+
+    "condition-layout.category#expansores-e-argamassar-para-alvenaria": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category", 
+                "arguments": {      
+                    "ids": ["20"]     
+                }    
+            }  
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#expansores-e-argamassar-para-alvenaria" 
+        }
+    },
+
+    "condition-layout.category#fibras": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category", 
+                "arguments": {      
+                    "ids": ["21"]     
+                }    
+            }  
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#fibras" 
+        }
+    },
+
+    "condition-layout.category#argamassas-de-assentamento": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",   
+                "arguments": {      
+                    "ids": ["26"]      
+                }   
+            } 
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#argamassas-de-assentamento" 
+        } 
+    },
+
+    "condition-layout.category#argamassas": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",   
+                "arguments": {      
+                    "ids": ["27"]      
+                }   
+            } 
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#argamassas" 
+        } 
+    },
+
+    "condition-layout.category#rejuntes": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",   
+                "arguments": {       
+                    "ids": ["28"]      
+                }    
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#rejuntes" 
+        } 
+    },
+
+    "condition-layout.category#reparo-estrutural-e-pisos-de-concreto": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",   
+                "arguments": {       
+                    "ids": ["48"]       
+                }    
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#reparo-estrutural-e-pisos-de-concreto" 
+        } 
+    },
+
+    "condition-layout.category#ferramentas": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["57"]       
+                }    
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#ferramentas"  
+        } 
+    },
+
+    "condition-layout.category#lubrificantes": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["61"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#lubrificantes"  
+        } 
+    },
+
+    "condition-layout.category#fachada": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["96"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#fachada"  
+        } 
+    },
+
+    "condition-layout.category#automotivo-e-transportes": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["80"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#automotivo-e-transportes"
+        } 
+    },
+
+    "condition-layout.category#nautico": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["90"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#nautico"
+        } 
+    },
+
+    "condition-layout.category#silicones": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["55"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#silicones"
+        } 
+    },
+
+    "condition-layout.category#tubos-de-drenagem": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["4"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#tubos-de-drenagem"
+        } 
+    },
+
+    "condition-layout.category#papelao-ondulado": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["37"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#papelao-ondulado"
+        } 
+    },
+
+    "condition-layout.category#pavimentacao": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["52"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#pavimentacao"
+        } 
+    },
+
+    "condition-layout.category#espumas-expansivas": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["40"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#espumas-expansivas"
+        } 
+    },
+
+    "condition-layout.category#vernizes-e-hidrorepelentes": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["32"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#vernizes-e-hidrorepelentes"
+        } 
+    },
+
+    "condition-layout.category#delimitador-de-profundidade": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["99"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#delimitador-de-profundidade"
+        } 
+    },
+
+    "condition-layout.category#aditivos-para-concreto": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["17"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#aditivos-para-concreto"
+        } 
+    },
+
+    "condition-layout.category#fixacao---parafusos-e-ferragens": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["62"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#fixacao---parafusos-e-ferragens"
+        } 
+    },
+
+    "condition-layout.category#polidores": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["88"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#polidores"
+        } 
+    },
+
+    "condition-layout.category#produto-para-infiltracao": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["101"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#produtos-para-infiltracao"
+        } 
+    },
+
+    "condition-layout.category#grauteamento": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["102"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#grauteamento"
+        } 
+    },
+
+    "condition-layout.category#mantas-para-telhado": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["105"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#mantas-para-telhado"
+        } 
+    },
+
+    "condition-layout.category#tipos-de-argamassa": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["120"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#tipos-de-argamassa"
+        } 
+    },
+
+    "condition-layout.category#massa-corrida": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["119"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#massa-corrida"
+        } 
+    },
+
+    "condition-layout.category#reforma-da-casa": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["122"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#reforma-da-casa"
+        } 
+    },
+
+    "condition-layout.category#reforma-rapida": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["123"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#reforma-rapida"
+        } 
+    },
+
+    "condition-layout.category#como-usar-cimento-queimado-na-parede": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["127"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#como-usar-cimento-queimado-na-parede"
+        } 
+    },
+
+    "condition-layout.category#ferramenta-para-casa": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["124"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#ferramenta-para-casa"
+        } 
+    },
+
+    "condition-layout.category#tipos-de-chave-de-fenda": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["128"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#tipos-de-chave-de-fenda"
+        } 
+    },
+
+    "condition-layout.category#kit-de-ferramentas": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["125"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#kit-de-ferramentas"
+        } 
+    },
+
+    "condition-layout.category#argamassa-para-porcelanato": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["129"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#argamassa-para-porcelanato"
+        } 
+    },
+
+    "condition-layout.category#vedalaje": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["132"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#vedalaje"
+        } 
+    },
+
+    "condition-layout.category#cimento-queimado": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["300"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#cimento-queimado"
+        } 
+    },
+
+    "condition-layout.category#ofertas-de-sao-joao": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["100"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#ofertas-de-sao-joao"
+        } 
+    },
+
+    "condition-layout.category#Black-Friday-material-de-construcao": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["130"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#Black-Friday-material-de-construcao"
+        } 
+    },
+
+    "condition-layout.category#ferramentas--maquinas-e-equipamentos": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category",     
+                "arguments": {       
+                    "ids": ["59"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#ferramentas--maquinas-e-equipamentos"
+        } 
+    },
+
+    "condition-layout.category#casa-renovada": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["121"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#casa-renovada"
+        } 
+    },
+
+    "condition-layout.category#melhores-marcas-de-desmoldantes-para-concreto": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "department",     
+                "arguments": {       
+                    "ids": ["131"]       
+                }     
+            } 
+        ],  
+        "matchType": "any",
+        "Then": "rich-text#melhores-marcas-de-desmoldantes-para-concreto"
+        } 
+    },
+
+    "condition-layout.category#ferramentas--ferramentas-manuais": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category", 
+                "arguments": {      
+                    "ids": ["58"]     
+                }   
+            } 
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#ferramentas--ferramentas-manuais" 
+        }
+    },
+
+    "condition-layout.category#reparo-estrutural-e-pisos-de-concreto--agente-de-cura": {
+        "props": {
+        "conditions": [
+            {  
+                "subject": "category", 
+                "arguments": {      
+                    "ids": ["53"]     
+                }   
+            } 
+        ], 
+        "matchType": "any",
+        "Then": "rich-text#reparo-estrutural-e-pisos-de-concreto--agente-de-cura" 
+        }
+    }
+
+}    
+    
