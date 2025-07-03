@@ -1,7 +1,7 @@
 {
   "vendor": "tfcvxe",
   "name": "store-theme",
-  "version": "3.7.8-beta.0",
+  "version": "3.7.8",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
