@@ -1,45 +1,57 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react"
 //@ts-ignore
 import styles from './style.css'
 
-const Cookie: React.FC = () => { 
+const Cookie: React.FC = () => {
+  const [verify, setVerify] = useState(false)
+  const cookieRef = useRef<HTMLDivElement>(null)
 
+  function checkLocalStorage() {
+    const storage = localStorage.getItem("privacidade-cookies")
+    if (!storage) {
+      setVerify(true)
+      localStorage.setItem("privacidade-cookies", "true")
+    }
+  }
 
-    const [verify, verificar] = useState(false) 
-    
-    function checkLocalStorage() {
-        const storage = localStorage.getItem("privacidade-cookies");
-        if(!storage){
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-ignore
-            verificar(true)
-            setLocalStorage();
-        }
-    } 
- 
-    function setLocalStorage() {
-        localStorage.setItem("privacidade-cookies", "true");
+  function handleAccept() {
+    setVerify(false)
+  }
+
+  // Fecha ao clicar fora
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (cookieRef.current && !cookieRef.current.contains(event.target as Node)) {
+        setVerify(false)
+      }
     }
 
-    function setLocalStorageBtn() {
-        verificar(false)
+    if (verify) {
+      document.addEventListener("mousedown", handleClickOutside)
     }
 
-    useEffect(() => {
-        checkLocalStorage();  
-    });
- 
- 
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [verify])
+
+  useEffect(() => {
+    checkLocalStorage()
+  }, [])
+
   return (
-    <div className={`${styles.contentcookie} ${verify && styles.ativo}`} style={{display: "none"}}>
-        <div className={styles.cookie}>
-            <span>Esse site salva seu histórico de uso. Ao continuar navegando nele, entendemos que Você concorda com a nossa <a href="/institucional/politicas"> Política de Privacidade.</a></span>
-            <button onClick={setLocalStorageBtn}>Aceitar e continuar</button>
+    <div className={`${styles.contentcookie} ${verify ? styles.ativo : ''}`}>
+      {verify && (
+        <div ref={cookieRef} className={styles.cookie}>
+          <span>
+            Esse site salva seu histórico de uso. Ao continuar navegando nele, entendemos que Você concorda com a nossa{" "}
+            <a href="/institucional/politicas">Política de Privacidade.</a>
+          </span>
+          <button onClick={handleAccept}>Aceitar e continuar</button>
         </div>
-    </div>     
-  ) 
+      )}
+    </div>
+  )
 }
- 
-export default Cookie
- 
 
+export default Cookie
