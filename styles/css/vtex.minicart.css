@@ -179,7 +179,7 @@
 }
 
 .minicartCheckoutButton :global(.vtex-button__label)::after{
-    content: 'Fechar pedido';
+    content: 'Concluir Compra';
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.6px;
@@ -189,9 +189,9 @@
 
 .minicartCheckoutButton :global(.vtex-button){
     background: transparent; 
-    border: 1px solid #003a7f;
+    border: 1px solid #47c757;
     transition: all 0.4s;
-    background-color: #003a7f;
+    background-color: #47c757;
 }
 
 .minicartCheckoutButton{

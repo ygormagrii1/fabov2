@@ -2,14 +2,16 @@
   "add-to-cart-button": {
     "props": {
       "addToCartFeedback": "customEvent",
+      "openMinicartOnClick": true,
       "customPixelEventId": "add-to-cart-button",
-      "text": "Comprar" 
+      "text": "Adicionar ao carrinho" 
     }
   }, 
  
   "add-to-cart-button#pdp-01": {
     "props": {
       "addToCartFeedback": "customEvent",
+      "openMinicartOnClick": true,
       "customPixelEventId": "add-to-cart-button",
       "text": "Adicionar ao carrinho"
     }
@@ -18,7 +20,7 @@
   "add-to-cart-button#pdp-02": {
     "props": {
       "isOneClickBuy": true, 
-      "text": "Comprar" 
+      "text": "Adicionar ao carrinho" 
     } 
   },
 
